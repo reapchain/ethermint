@@ -7,7 +7,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 	ethlog "github.com/ethereum/go-ethereum/log"
 	"github.com/rs/zerolog"
-	"github.com/tendermint/tendermint/types/time"
+	"github.com/reapchain/reapchain-core/types/time"
 )
 
 func BenchmarkHandler_Log(b *testing.B) {

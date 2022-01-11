@@ -11,9 +11,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 	"github.com/tharsis/ethermint/tests"
 	"github.com/tharsis/ethermint/x/evm/types"
 )

@@ -18,8 +18,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	"github.com/tendermint/tendermint/libs/log"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	"github.com/tharsis/ethermint/rpc/ethereum/backend"
 	rpctypes "github.com/tharsis/ethermint/rpc/ethereum/types"

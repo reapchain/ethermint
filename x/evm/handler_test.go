@@ -7,8 +7,8 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmjson "github.com/tendermint/tendermint/libs/json"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	tmjson "github.com/reapchain/reapchain-core/libs/json"
 
 	"github.com/cosmos/cosmos-sdk/simapp"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -34,11 +34,11 @@ import (
 	"github.com/tharsis/ethermint/x/evm"
 	"github.com/tharsis/ethermint/x/evm/types"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
 
-	"github.com/tendermint/tendermint/version"
+	"github.com/reapchain/reapchain-core/version"
 )
 
 type EvmTestSuite struct {

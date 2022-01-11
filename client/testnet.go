@@ -13,10 +13,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 
 	"github.com/spf13/cobra"
-	tmconfig "github.com/tendermint/tendermint/config"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	tmconfig "github.com/reapchain/reapchain-core/config"
+	tmrand "github.com/reapchain/reapchain-core/libs/rand"
+	"github.com/reapchain/reapchain-core/types"
+	tmtime "github.com/reapchain/reapchain-core/types/time"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

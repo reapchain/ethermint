@@ -26,7 +26,7 @@ import (
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 )
 
 type AnteTestSuite struct {

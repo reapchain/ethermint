@@ -13,7 +13,7 @@ import (
 	"github.com/tharsis/ethermint/crypto/hd"
 	ethermint "github.com/tharsis/ethermint/types"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 
 	sdkcrypto "github.com/cosmos/cosmos-sdk/crypto"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"

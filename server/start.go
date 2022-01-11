@@ -18,14 +18,14 @@ import (
 
 	"google.golang.org/grpc"
 
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/rpc/client/local"
+	abciserver "github.com/reapchain/reapchain-core/abci/server"
+	tcmd "github.com/reapchain/reapchain-core/cmd/reapchain/commands"
+	tmos "github.com/reapchain/reapchain-core/libs/os"
+	"github.com/reapchain/reapchain-core/node"
+	"github.com/reapchain/reapchain-core/p2p"
+	pvm "github.com/reapchain/reapchain-core/privval"
+	"github.com/reapchain/reapchain-core/proxy"
+	"github.com/reapchain/reapchain-core/rpc/client/local"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/server/rosetta"

@@ -5,8 +5,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/types/tx"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/proto/tendermint/crypto"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	"github.com/reapchain/reapchain-core/proto/reapchain/crypto"
 
 	"github.com/cosmos/cosmos-sdk/client"
 

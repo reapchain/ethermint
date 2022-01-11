@@ -19,7 +19,7 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	tmjson "github.com/tendermint/tendermint/libs/json"
+	tmjson "github.com/reapchain/reapchain-core/libs/json"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
 	"github.com/tharsis/ethermint/app"
@@ -36,11 +36,11 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/params"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	"github.com/tendermint/tendermint/version"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	"github.com/reapchain/reapchain-core/version"
 )
 
 var testTokens = sdk.NewIntWithDecimal(1000, 18)

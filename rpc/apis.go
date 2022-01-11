@@ -19,7 +19,7 @@ import (
 	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/web3"
 	"github.com/tharsis/ethermint/rpc/ethereum/types"
 
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )
 
 // RPC namespaces and API version

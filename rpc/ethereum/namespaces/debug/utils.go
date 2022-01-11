@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 )
 
 // isCPUProfileConfigurationActivated checks if cpuprofile was configured via flag

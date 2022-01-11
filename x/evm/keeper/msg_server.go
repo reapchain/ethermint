@@ -5,8 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"

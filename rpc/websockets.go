@@ -21,10 +21,10 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/tendermint/tendermint/libs/log"
-	coretypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	coretypes "github.com/reapchain/reapchain-core/rpc/core/types"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	rpcfilters "github.com/tharsis/ethermint/rpc/ethereum/namespaces/eth/filters"
 	"github.com/tharsis/ethermint/rpc/ethereum/types"

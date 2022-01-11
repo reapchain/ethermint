@@ -8,7 +8,7 @@ import (
 	"github.com/tharsis/ethermint/rpc/ethereum/types"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

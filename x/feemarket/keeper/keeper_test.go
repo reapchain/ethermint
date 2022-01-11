@@ -28,10 +28,10 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	"github.com/tendermint/tendermint/version"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	"github.com/reapchain/reapchain-core/version"
 )
 
 type KeeperTestSuite struct {

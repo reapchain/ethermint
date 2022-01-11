@@ -5,7 +5,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	coretypes "github.com/tendermint/tendermint/rpc/core/types"
+	coretypes "github.com/reapchain/reapchain-core/rpc/core/types"
 )
 
 type EventBus interface {

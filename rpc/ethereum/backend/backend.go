@@ -17,14 +17,14 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -717,7 +717,7 @@ func (e *EVMBackend) GetTransactionByHash(txHash common.Hash) (*types.RPCTransac
 
 // GetTxByEthHash uses `/tx_query` to find transaction by ethereum tx hash
 // TODO: Don't need to convert once hashing is fixed on Tendermint
-// https://github.com/tendermint/tendermint/issues/6539
+// https://github.com/reapchain/reapchain-core/issues/6539
 func (e *EVMBackend) GetTxByEthHash(hash common.Hash) (*tmrpctypes.ResultTx, error) {
 	query := fmt.Sprintf("%s.%s='%s'", evmtypes.TypeMsgEthereumTx, evmtypes.AttributeKeyEthereumTxHash, hash.Hex())
 	resTxs, err := e.clientCtx.Client.TxSearch(e.ctx, query, false, nil, nil, "")

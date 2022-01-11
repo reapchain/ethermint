@@ -14,7 +14,7 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 
@@ -27,7 +27,7 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/consensus/ethash"
 	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 	"github.com/tharsis/ethermint/rpc/ethereum/backend"
 	rpctypes "github.com/tharsis/ethermint/rpc/ethereum/types"
 )

@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/client/keys"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
+	"github.com/reapchain/reapchain-core/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	clientkeys "github.com/tharsis/ethermint/client/keys"

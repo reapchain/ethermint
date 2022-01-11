@@ -8,11 +8,11 @@ import (
 
 	"github.com/tharsis/ethermint/rpc/ethereum/types"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 
-	coretypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
-	tmtypes "github.com/tendermint/tendermint/types"
+	coretypes "github.com/reapchain/reapchain-core/rpc/core/types"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

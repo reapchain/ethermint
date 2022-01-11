@@ -6,7 +6,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/server"
 
 	ethlog "github.com/ethereum/go-ethereum/log"
-	tmlog "github.com/tendermint/tendermint/libs/log"
+	tmlog "github.com/reapchain/reapchain-core/libs/log"
 )
 
 var _ ethlog.Handler = &Handler{}

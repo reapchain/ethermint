@@ -12,8 +12,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/server/types"
 	"github.com/cosmos/cosmos-sdk/version"
 
-	tmlog "github.com/tendermint/tendermint/libs/log"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	tmlog "github.com/reapchain/reapchain-core/libs/log"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )
 
 // add server commands

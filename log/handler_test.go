@@ -6,7 +6,7 @@ import (
 
 	"github.com/rs/zerolog"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/types/time"
+	"github.com/reapchain/reapchain-core/types/time"
 
 	"github.com/cosmos/cosmos-sdk/server"
 

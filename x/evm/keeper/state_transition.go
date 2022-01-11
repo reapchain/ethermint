@@ -3,7 +3,7 @@ package keeper
 import (
 	"math/big"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
