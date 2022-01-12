@@ -33,7 +33,7 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	dbm "github.com/tendermint/tm-db"
-	evmenc "github.com/tharsis/ethermint/encoding"
+	evmenc "github.com/reapchain/ethermint/encoding"
 )
 
 // MakeEncodingConfig creates the EncodingConfig

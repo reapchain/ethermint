@@ -10,8 +10,8 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"

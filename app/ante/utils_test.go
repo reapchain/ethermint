@@ -19,12 +19,12 @@ import (
 	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
-	"github.com/tharsis/ethermint/app"
-	ante "github.com/tharsis/ethermint/app/ante"
-	"github.com/tharsis/ethermint/encoding"
-	"github.com/tharsis/ethermint/tests"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/app"
+	ante "github.com/reapchain/ethermint/app/ante"
+	"github.com/reapchain/ethermint/encoding"
+	"github.com/reapchain/ethermint/tests"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 )

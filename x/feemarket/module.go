@@ -19,10 +19,10 @@ import (
 	"github.com/reapchain/cosmos-sdk/types/module"
 	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
 
-	"github.com/tharsis/ethermint/x/feemarket/client/cli"
-	"github.com/tharsis/ethermint/x/feemarket/keeper"
-	"github.com/tharsis/ethermint/x/feemarket/simulation"
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/client/cli"
+	"github.com/reapchain/ethermint/x/feemarket/keeper"
+	"github.com/reapchain/ethermint/x/feemarket/simulation"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 var (

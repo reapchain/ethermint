@@ -7,7 +7,7 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

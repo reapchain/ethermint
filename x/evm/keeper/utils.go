@@ -7,7 +7,7 @@ import (
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	authante "github.com/reapchain/cosmos-sdk/x/auth/ante"
 
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	cmath "github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/core"

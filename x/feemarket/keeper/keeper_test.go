@@ -17,12 +17,12 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	"github.com/tharsis/ethermint/app"
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
-	"github.com/tharsis/ethermint/encoding"
-	"github.com/tharsis/ethermint/tests"
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/app"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/encoding"
+	"github.com/reapchain/ethermint/tests"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

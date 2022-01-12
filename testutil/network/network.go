@@ -47,13 +47,13 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/genutil"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	"github.com/tharsis/ethermint/crypto/hd"
-	"github.com/tharsis/ethermint/encoding"
-	"github.com/tharsis/ethermint/server/config"
-	ethermint "github.com/tharsis/ethermint/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/crypto/hd"
+	"github.com/reapchain/ethermint/encoding"
+	"github.com/reapchain/ethermint/server/config"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
-	"github.com/tharsis/ethermint/app"
+	"github.com/reapchain/ethermint/app"
 )
 
 // package-wide network lock to only allow one test network at a time

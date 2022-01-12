@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/stretchr/testify/suite"
-	"github.com/tharsis/ethermint/tests"
+	"github.com/reapchain/ethermint/tests"
 )
 
 type TxDataTestSuite struct {

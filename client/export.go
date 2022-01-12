@@ -14,8 +14,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/reapchain/cosmos-sdk/crypto/keyring"
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
-	"github.com/tharsis/ethermint/crypto/hd"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/hd"
 )
 
 // UnsafeExportEthKeyCommand exports a key with the given name as a private key in hex format.

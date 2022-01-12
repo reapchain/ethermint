@@ -9,7 +9,7 @@ import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/tharsis/ethermint/types"
+	"github.com/reapchain/ethermint/types"
 )
 
 var _ paramtypes.ParamSet = &Params{}

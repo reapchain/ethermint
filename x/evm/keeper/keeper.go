@@ -16,8 +16,8 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 
 	"github.com/ethereum/go-ethereum/params"
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // Keeper grants access to the EVM module state and implements the go-ethereum StateDB interface.

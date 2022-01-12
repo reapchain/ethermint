@@ -9,9 +9,9 @@ import (
 	tx "github.com/reapchain/cosmos-sdk/types/tx"
 	authante "github.com/reapchain/cosmos-sdk/x/auth/ante"
 
-	ethermint "github.com/tharsis/ethermint/types"
-	evmkeeper "github.com/tharsis/ethermint/x/evm/keeper"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmkeeper "github.com/reapchain/ethermint/x/evm/keeper"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"

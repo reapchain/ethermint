@@ -26,10 +26,10 @@ import (
 	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	rpcfilters "github.com/tharsis/ethermint/rpc/ethereum/namespaces/eth/filters"
-	"github.com/tharsis/ethermint/rpc/ethereum/types"
-	"github.com/tharsis/ethermint/server/config"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	rpcfilters "github.com/reapchain/ethermint/rpc/ethereum/namespaces/eth/filters"
+	"github.com/reapchain/ethermint/rpc/ethereum/types"
+	"github.com/reapchain/ethermint/server/config"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 type WebsocketsServer interface {

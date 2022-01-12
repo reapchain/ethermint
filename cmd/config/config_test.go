@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	ethermint "github.com/tharsis/ethermint/types"
+	ethermint "github.com/reapchain/ethermint/types"
 
 	"github.com/reapchain/cosmos-sdk/crypto/hd"
 	sdk "github.com/reapchain/cosmos-sdk/types"

@@ -16,8 +16,8 @@ import (
 	channelkeeper "github.com/reapchain/ibc-go/modules/core/04-channel/keeper"
 	ibcante "github.com/reapchain/ibc-go/modules/core/ante"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 const (

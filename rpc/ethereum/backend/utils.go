@@ -15,8 +15,8 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/tharsis/ethermint/rpc/ethereum/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/rpc/ethereum/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 // SetTxDefaults populates tx message with default values in case they are not

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // GetParams returns the total set of fee market parameters.

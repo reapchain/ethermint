@@ -9,14 +9,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tharsis/ethermint/app"
+	"github.com/reapchain/ethermint/app"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	evmkeeper "github.com/tharsis/ethermint/x/evm/keeper"
+	evmkeeper "github.com/reapchain/ethermint/x/evm/keeper"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/consensus/ethash"
@@ -32,7 +32,7 @@ import (
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
 	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
 	"github.com/reapchain/reapchain-core/version"
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 var (

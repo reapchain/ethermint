@@ -13,8 +13,8 @@ import (
 	"github.com/reapchain/cosmos-sdk/client"
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

@@ -9,7 +9,7 @@ import (
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
-	"github.com/tharsis/ethermint/encoding"
+	"github.com/reapchain/ethermint/encoding"
 )
 
 func BenchmarkEthermintApp_ExportAppStateAndValidators(b *testing.B) {

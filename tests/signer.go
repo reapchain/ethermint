@@ -10,7 +10,7 @@ import (
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 // NewAddrKey generates an Ethereum address and its corresponding private key.

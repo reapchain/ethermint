@@ -3,7 +3,7 @@ package config
 import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	ethermint "github.com/tharsis/ethermint/types"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 const (
