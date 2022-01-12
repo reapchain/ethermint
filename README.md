@@ -38,7 +38,7 @@ parent:
   </a>
 </div>
 
-Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the [Cosmos SDK](https://github.com/cosmos/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/reapchain/reapchain-core) consensus engine.
+Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the [Cosmos SDK](https://github.com/reapchain/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/reapchain/reapchain-core) consensus engine.
 
 **Note**: Requires [Go 1.17+](https://golang.org/dl/)
 

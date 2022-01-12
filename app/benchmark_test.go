@@ -5,7 +5,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
+	"github.com/reapchain/cosmos-sdk/simapp"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"

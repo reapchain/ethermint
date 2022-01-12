@@ -3,9 +3,9 @@ package keeper
 import (
 	"math/big"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 
 	"github.com/tharsis/ethermint/x/feemarket/types"

@@ -6,9 +6,9 @@ import (
 	"crypto/subtle"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/codec"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/ethereum/go-ethereum/crypto"
 
 	tmcrypto "github.com/reapchain/reapchain-core/crypto"

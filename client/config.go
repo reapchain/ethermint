@@ -10,7 +10,7 @@ import (
 
 	"github.com/reapchain/reapchain-core/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/flags"
 
 	ethermint "github.com/tharsis/ethermint/types"
 )

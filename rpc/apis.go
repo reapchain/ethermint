@@ -3,8 +3,8 @@
 package rpc
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/server"
 
 	"github.com/ethereum/go-ethereum/rpc"
 

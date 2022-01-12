@@ -18,10 +18,10 @@ import (
 
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client"
 	stderrors "github.com/pkg/errors"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

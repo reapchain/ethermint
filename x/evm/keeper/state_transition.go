@@ -5,10 +5,10 @@ import (
 
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
 	ethermint "github.com/tharsis/ethermint/types"
 	"github.com/tharsis/ethermint/x/evm/types"
@@ -166,7 +166,7 @@ func (k Keeper) GetHashFn() vm.GetHashFunc {
 // consideration the amount of gas returned. Finally, the context is updated with the EVM gas consumed value prior to
 // returning.
 //
-// For relevant discussion see: https://github.com/cosmos/cosmos-sdk/discussions/9072
+// For relevant discussion see: https://github.com/reapchain/cosmos-sdk/discussions/9072
 func (k *Keeper) ApplyTransaction(tx *ethtypes.Transaction) (*types.MsgEthereumTxResponse, error) {
 	ctx := k.Ctx()
 

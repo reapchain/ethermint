@@ -7,7 +7,7 @@ import (
 	"runtime/pprof"
 	"strings"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server"
 	"github.com/reapchain/reapchain-core/libs/log"
 )
 

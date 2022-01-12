@@ -13,7 +13,7 @@ message GenesisState {
   // base fee is the exported value from previous software version.
   // Zero by default.
   string base_fee = 2 [
-    (gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int",
+    (gogoproto.customtype) = "github.com/reapchain/cosmos-sdk/types.Int",
     (gogoproto.nullable) = false
   ];
   // block gas is the amount of gas used on the last block before the upgrade.

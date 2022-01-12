@@ -8,9 +8,9 @@ import (
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
 	"github.com/spf13/cobra"
 
-	sdkserver "github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	sdkserver "github.com/reapchain/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server/types"
+	"github.com/reapchain/cosmos-sdk/version"
 
 	tmlog "github.com/reapchain/reapchain-core/libs/log"
 	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"

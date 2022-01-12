@@ -110,7 +110,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* (deps) [tharsis#692](https://github.com/tharsis/ethermint/pull/692) Bump Cosmos SDK version to [`v0.44.3`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.44.3).
+* (deps) [tharsis#692](https://github.com/tharsis/ethermint/pull/692) Bump Cosmos SDK version to [`v0.44.3`](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.44.3).
 * (rpc) [tharsis#679](https://github.com/tharsis/ethermint/pull/679) Fix file close handle.
 * (deps) [tharsis#668](https://github.com/tharsis/ethermint/pull/668) Bump Tendermint version to [`v0.34.14`](https://github.com/reapchain/reapchain-core/releases/tag/v0.34.14).
 
@@ -135,7 +135,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 * (deps) [tharsis#621](https://github.com/tharsis/ethermint/pull/621) Bump IBC-go to [`v1.2.1`](https://github.com/cosmos/ibc-go/releases/tag/v1.2.1)
 * (evm) [tharsis#613](https://github.com/tharsis/ethermint/pull/613) Refactor `traceTx`
-* (deps) [tharsis#610](https://github.com/tharsis/ethermint/pull/610) Bump Cosmos SDK to [v0.44.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.44.1).
+* (deps) [tharsis#610](https://github.com/tharsis/ethermint/pull/610) Bump Cosmos SDK to [v0.44.1](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.44.1).
 
 ### Bug Fixes
 
@@ -225,7 +225,7 @@ the Tracer type used to collect execution traces from the EVM transaction execut
 * (deps) [tharsis#427](https://github.com/tharsis/ethermint/pull/427) Bump ibc-go to [`v1.0.0`](https://github.com/cosmos/ibc-go/releases/tag/v1.0.0)
 * (gRPC) [tharsis#239](https://github.com/tharsis/ethermint/pull/239) Query `ChainConfig` via gRPC.
 * (rpc) [tharsis#181](https://github.com/tharsis/ethermint/pull/181) Use evm denomination for params on tx fee.
-* (deps) [tharsis#423](https://github.com/tharsis/ethermint/pull/423) Bump Cosmos SDK and Tendermint versions to [v0.43.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.43.0) and [v0.34.11](https://github.com/reapchain/reapchain-core/releases/tag/v0.34.11), respectively.
+* (deps) [tharsis#423](https://github.com/tharsis/ethermint/pull/423) Bump Cosmos SDK and Tendermint versions to [v0.43.0](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.43.0) and [v0.34.11](https://github.com/reapchain/reapchain-core/releases/tag/v0.34.11), respectively.
 * (evm) [tharsis#66](https://github.com/tharsis/ethermint/issues/66) Support legacy transaction types for signing.
 * (evm) [tharsis#24](https://github.com/tharsis/ethermint/pull/24) Implement metrics for `MsgEthereumTx`, state transitions, `BeginBlock` and `EndBlock`.
 * (rpc)  [#124](https://github.com/tharsis/ethermint/issues/124) Implement `txpool_content`, `txpool_inspect` and `txpool_status` RPC methods
@@ -310,7 +310,7 @@ the Tracer type used to collect execution traces from the EVM transaction execut
 
 ### Improvements
 
-* (deps) [\#615](https://github.com/cosmos/ethermint/pull/615) Bump Cosmos SDK version to [v0.39.2](https://github.com/cosmos/cosmos-sdk/tag/v0.39.2)
+* (deps) [\#615](https://github.com/cosmos/ethermint/pull/615) Bump Cosmos SDK version to [v0.39.2](https://github.com/reapchain/cosmos-sdk/tag/v0.39.2)
 * (deps) [\#610](https://github.com/cosmos/ethermint/pull/610) Update Go dependency to 1.15+.
 * (evm) [#603](https://github.com/cosmos/ethermint/pull/603) Add state transition params that enable or disable the EVM `Call` and `Create` operations.
 * (deps) [\#602](https://github.com/cosmos/ethermint/pull/602) Bump tendermint version to [v0.33.9](https://github.com/reapchain/reapchain-core/releases/tag/v0.33.9)
@@ -390,7 +390,7 @@ corresponding Ethereum API namespace:
 
 ### Improvements
 
-* (sdk) [\#386](https://github.com/cosmos/ethermint/pull/386) Bump Cosmos SDK version to [v0.39.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.39.1)
+* (sdk) [\#386](https://github.com/cosmos/ethermint/pull/386) Bump Cosmos SDK version to [v0.39.1](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.39.1)
 * (`x/evm`) [\#181](https://github.com/cosmos/ethermint/issues/181) Updated EVM module to the recommended module structure.
 * (app) [\#188](https://github.com/cosmos/ethermint/issues/186)  Misc cleanup:
   * (`x/evm`) Rename `EthereumTxMsg` --> `MsgEthereumTx` and `EmintMsg` --> `MsgEthermint` for consistency with SDK standards

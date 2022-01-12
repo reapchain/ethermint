@@ -20,7 +20,7 @@ import (
 	"github.com/ethereum/go-ethereum/eth/filters"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	"github.com/tharsis/ethermint/rpc/ethereum/pubsub"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"

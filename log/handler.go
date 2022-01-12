@@ -3,7 +3,7 @@ package log
 import (
 	"github.com/rs/zerolog"
 
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server"
 
 	ethlog "github.com/ethereum/go-ethereum/log"
 	tmlog "github.com/reapchain/reapchain-core/libs/log"

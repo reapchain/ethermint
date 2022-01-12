@@ -3,14 +3,14 @@ package client
 import (
 	"bufio"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/keys"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/spf13/cobra"
 	"github.com/reapchain/reapchain-core/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 	clientkeys "github.com/tharsis/ethermint/client/keys"
 	"github.com/tharsis/ethermint/crypto/hd"
 )

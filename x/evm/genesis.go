@@ -3,8 +3,8 @@ package evm
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	"github.com/ethereum/go-ethereum/common"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 

@@ -10,8 +10,8 @@ import (
 
 	hdwallet "github.com/miguelmota/go-ethereum-hdwallet"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/reapchain/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 
 	cryptocodec "github.com/tharsis/ethermint/crypto/codec"
 	ethermint "github.com/tharsis/ethermint/types"

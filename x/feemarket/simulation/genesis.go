@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/reapchain/cosmos-sdk/types/module"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/tharsis/ethermint/x/feemarket/types"
 )
 

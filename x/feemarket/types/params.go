@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/ethereum/go-ethereum/params"
 )
 
