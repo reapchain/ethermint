@@ -56,7 +56,7 @@ func (s *Subscription) Err() <-chan error {
 	return s.err
 }
 
-// Event returns the tendermint result event channel
+// Event returns the reapchain result event channel
 func (s *Subscription) Event() <-chan coretypes.ResultEvent {
 	return s.eventCh
 }

@@ -121,7 +121,7 @@ func (s *IntegrationTestSuite) TestBlock() {
 	s.Require().NoError(err)
 	s.Require().NotNil(blockByNum)
 
-	// compare the ethereum header with the tendermint header
+	// compare the ethereum header with the reapchain header
 	s.Require().Equal(len(block.Block.Txs), len(blockByNum.Body().Transactions))
 	s.Require().Equal(block.Block.LastBlockID.Hash.Bytes(), blockByNum.Header().ParentHash.Bytes())
 

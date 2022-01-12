@@ -120,7 +120,7 @@ func (k Keeper) GetHashFn() vm.GetHashFunc {
 			contextBlockHeader := ctx.BlockHeader()
 			header, err := tmtypes.HeaderFromProto(&contextBlockHeader)
 			if err != nil {
-				k.Logger(ctx).Error("failed to cast tendermint header from proto", "error", err)
+				k.Logger(ctx).Error("failed to cast reapchain header from proto", "error", err)
 				return common.Hash{}
 			}
 
@@ -138,7 +138,7 @@ func (k Keeper) GetHashFn() vm.GetHashFunc {
 
 			header, err := tmtypes.HeaderFromProto(&histInfo.Header)
 			if err != nil {
-				k.Logger(ctx).Error("failed to cast tendermint header from proto", "error", err)
+				k.Logger(ctx).Error("failed to cast reapchain header from proto", "error", err)
 				return common.Hash{}
 			}
 

@@ -128,7 +128,7 @@ which accepts a path for the resulting pprof file.
 	}
 
 	cmd.Flags().String(flags.FlagHome, defaultNodeHome, "The application home directory")
-	cmd.Flags().Bool(srvflags.WithTendermint, true, "Run abci app embedded in-process with tendermint")
+	cmd.Flags().Bool(srvflags.WithTendermint, true, "Run abci app embedded in-process with reapchain")
 	cmd.Flags().String(srvflags.Address, "tcp://0.0.0.0:26658", "Listen address")
 	cmd.Flags().String(srvflags.Transport, "socket", "Transport protocol: socket, grpc")
 	cmd.Flags().String(srvflags.TraceStore, "", "Enable KVStore tracing to an output file")
@@ -309,13 +309,13 @@ func startInProcess(ctx *server.Context, clientCtx client.Context, appCreator ty
 	}
 
 	if err := tmNode.Start(); err != nil {
-		logger.Error("failed start tendermint server", "error", err.Error())
+		logger.Error("failed start reapchain server", "error", err.Error())
 		return err
 	}
 
 	// Add the tx service to the gRPC router. We only need to register this
 	// service if API or gRPC is enabled, and avoid doing so in the general
-	// case, because it spawns a new local tendermint RPC client.
+	// case, because it spawns a new local reapchain RPC client.
 	if config.API.Enable || config.GRPC.Enable {
 		clientCtx = clientCtx.WithClient(local.New(tmNode))
 

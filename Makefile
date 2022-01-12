@@ -459,7 +459,7 @@ proto-update-deps:
 	@mkdir -p $(COSMOS_PROTO_TYPES)
 	@curl -sSL $(COSMOS_PROTO_URL)/cosmos.proto > $(COSMOS_PROTO_TYPES)/cosmos.proto
 
-## Importing of tendermint protobuf definitions currently requires the
+## Importing of reapchain protobuf definitions currently requires the
 ## use of `sed` in order to build properly with cosmos-sdk's proto file layout
 ## (which is the standard Buf.build FILE_LAYOUT)
 ## Issue link: https://github.com/reapchain/reapchain-core/issues/5021

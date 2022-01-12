@@ -1,5 +1,5 @@
 syntax = "proto3";
-package tendermint.crypto;
+package reapchain.crypto;
 
 option go_package = "github.com/reapchain/reapchain-core/proto/reapchain/crypto";
 

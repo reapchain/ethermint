@@ -120,8 +120,8 @@ func NewEVMBackend(ctx *server.Context, logger log.Logger, clientCtx client.Cont
 }
 
 // BlockNumber returns the current block number in abci app state.
-// Because abci app state could lag behind from tendermint latest block, it's more stable
-// for the client to use the latest block number in abci app state than tendermint rpc.
+// Because abci app state could lag behind from reapchain latest block, it's more stable
+// for the client to use the latest block number in abci app state than reapchain rpc.
 func (e *EVMBackend) BlockNumber() (hexutil.Uint64, error) {
 	// do any grpc query, ignore the response and use the returned block height
 	var header metadata.MD
@@ -298,7 +298,7 @@ func (e *EVMBackend) GetTendermintBlockByNumber(blockNum types.BlockNumber) (*tm
 	resBlock, err := e.clientCtx.Client.Block(e.ctx, &height)
 	if err != nil {
 		if resBlock, err = e.clientCtx.Client.Block(e.ctx, nil); err != nil {
-			e.logger.Debug("tendermint client failed to get latest block", "height", height, "error", err.Error())
+			e.logger.Debug("reapchain client failed to get latest block", "height", height, "error", err.Error())
 			return nil, nil
 		}
 	}
@@ -315,7 +315,7 @@ func (e *EVMBackend) GetTendermintBlockByNumber(blockNum types.BlockNumber) (*tm
 func (e *EVMBackend) GetTendermintBlockByHash(blockHash common.Hash) (*tmrpctypes.ResultBlock, error) {
 	resBlock, err := e.clientCtx.Client.BlockByHash(e.ctx, blockHash.Bytes())
 	if err != nil {
-		e.logger.Debug("tendermint client failed to get block", "blockHash", blockHash.Hex(), "error", err.Error())
+		e.logger.Debug("reapchain client failed to get block", "blockHash", blockHash.Hex(), "error", err.Error())
 	}
 
 	if resBlock == nil || resBlock.Block == nil {

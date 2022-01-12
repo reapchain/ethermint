@@ -9,7 +9,7 @@ import (
 
 // Tendermint full-node start flags
 const (
-	WithTendermint = "with-tendermint"
+	WithTendermint = "with-reapchain"
 	Address        = "address"
 	Transport      = "transport"
 	TraceStore     = "trace-store"
@@ -54,7 +54,7 @@ func AddTxFlags(cmd *cobra.Command) (*cobra.Command, error) {
 	cmd.PersistentFlags().String(flags.FlagFrom, "", "Name or address of private key with which to sign")
 	cmd.PersistentFlags().String(flags.FlagFees, "", "Fees to pay along with transaction; eg: 10aphoton")
 	cmd.PersistentFlags().String(flags.FlagGasPrices, "", "Gas prices to determine the transaction fee (e.g. 10aphoton)")
-	cmd.PersistentFlags().String(flags.FlagNode, "tcp://localhost:26657", "<host>:<port> to tendermint rpc interface for this chain")
+	cmd.PersistentFlags().String(flags.FlagNode, "tcp://localhost:26657", "<host>:<port> to reapchain rpc interface for this chain")
 	cmd.PersistentFlags().Float64(flags.FlagGasAdjustment, flags.DefaultGasAdjustment, "adjustment factor to be multiplied against the estimate returned by the tx simulation; if the gas limit is set manually this flag is ignored ")
 	cmd.PersistentFlags().StringP(flags.FlagBroadcastMode, "b", flags.BroadcastSync, "Transaction broadcasting mode (sync|async|block)")
 	cmd.PersistentFlags().String(flags.FlagKeyringBackend, keyring.BackendOS, "Select keyring's backend")
