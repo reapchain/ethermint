@@ -20,7 +20,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
 	github.com/reapchain/cosmos-sdk v0.45.1
-	github.com/reapchain/ibc-go/v3 v3.0.0
+	github.com/reapchain/ibc-go v0.3.0
 	github.com/reapchain/reapchain-core v0.1.2
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/rs/cors v1.8.2
