@@ -8,11 +8,11 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
 
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // GetQueryCmd returns the parent command for all x/feemarket CLI query commands.

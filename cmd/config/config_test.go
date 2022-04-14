@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	ethermint "github.com/tharsis/ethermint/types"
+	ethermint "github.com/reapchain/ethermint/types"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/crypto/hd"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 )
 
 func TestSetBech32Prefixes(t *testing.T) {

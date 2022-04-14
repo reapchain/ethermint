@@ -7,14 +7,14 @@ import (
 	"strings"
 
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/bytes"
+	"github.com/reapchain/reapchain-core/libs/bytes"
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/reapchain/cosmos-sdk/client"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/version"
 )
 
 // Cmd creates a main CLI command

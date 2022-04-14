@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"strconv"
 
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmbytes "github.com/reapchain/reapchain-core/libs/bytes"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 var _ types.MsgServer = &Keeper{}
@@ -44,7 +44,7 @@ func (k *Keeper) EthereumTx(goCtx context.Context, msg *types.MsgEthereumTx) (*t
 	}
 
 	if len(ctx.TxBytes()) > 0 {
-		// add event for tendermint transaction hash format
+		// add event for reapchain transaction hash format
 		hash := tmbytes.HexBytes(tmtypes.Tx(ctx.TxBytes()).Hash())
 		attrs = append(attrs, sdk.NewAttribute(types.AttributeKeyTxHash, hash.String()))
 	}

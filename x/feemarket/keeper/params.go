@@ -3,8 +3,8 @@ package keeper
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // GetParams returns the total set of fee market parameters.

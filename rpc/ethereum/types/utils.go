@@ -8,14 +8,14 @@ import (
 	"math/big"
 	"strconv"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/client"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
@@ -42,7 +42,7 @@ func RawTxToEthTx(clientCtx client.Context, txBz tmtypes.Tx) ([]*evmtypes.MsgEth
 }
 
 // EthHeaderFromTendermint is an util function that returns an Ethereum Header
-// from a tendermint Header.
+// from a reapchain Header.
 func EthHeaderFromTendermint(header tmtypes.Header, bloom ethtypes.Bloom, baseFee *big.Int) *ethtypes.Header {
 	txHash := ethtypes.EmptyRootHash
 	if len(header.DataHash) == 0 {
@@ -87,7 +87,7 @@ func BlockMaxGasFromConsensusParams(goCtx context.Context, clientCtx client.Cont
 	return gasLimit, nil
 }
 
-// FormatBlock creates an ethereum block from a tendermint header and ethereum-formatted
+// FormatBlock creates an ethereum block from a reapchain header and ethereum-formatted
 // transactions.
 func FormatBlock(
 	header tmtypes.Header, size int, gasLimit int64,

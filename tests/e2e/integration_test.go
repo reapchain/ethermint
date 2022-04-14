@@ -7,8 +7,8 @@ import (
 	"math/big"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	// . "github.com/onsi/ginkgo"
 	// . "github.com/onsi/gomega"
@@ -23,9 +23,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient/gethclient"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/tharsis/ethermint/server/config"
-	"github.com/tharsis/ethermint/testutil/network"
-	ethermint "github.com/tharsis/ethermint/types"
+	"github.com/reapchain/ethermint/server/config"
+	"github.com/reapchain/ethermint/testutil/network"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 // var _ = Describe("E2e", func() {
@@ -131,7 +131,7 @@ func (s *IntegrationTestSuite) TestBlock() {
 	s.Require().NoError(err)
 	s.Require().NotNil(blockByNum)
 
-	// compare the ethereum header with the tendermint header
+	// compare the ethereum header with the reapchain header
 	s.Require().Equal(len(block.Block.Txs), len(blockByNum.Body().Transactions))
 	s.Require().Equal(block.Block.LastBlockID.Hash.Bytes(), blockByNum.Header().ParentHash.Bytes())
 

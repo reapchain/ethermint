@@ -11,13 +11,13 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
+	"github.com/reapchain/cosmos-sdk/client"
+	clientrest "github.com/reapchain/cosmos-sdk/client/rest"
+	"github.com/reapchain/cosmos-sdk/types/rest"
+	authrest "github.com/reapchain/cosmos-sdk/x/auth/client/rest"
 
-	rpctypes "github.com/tharsis/ethermint/rpc/ethereum/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	rpctypes "github.com/reapchain/ethermint/rpc/ethereum/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 )

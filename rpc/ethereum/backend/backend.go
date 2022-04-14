@@ -9,33 +9,33 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/server"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/reapchain/cosmos-sdk/client"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/tharsis/ethermint/rpc/ethereum/types"
-	"github.com/tharsis/ethermint/server/config"
-	ethermint "github.com/tharsis/ethermint/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/rpc/ethereum/types"
+	"github.com/reapchain/ethermint/server/config"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // Backend implements the functionality shared within namespaces.
@@ -116,8 +116,8 @@ func NewEVMBackend(ctx *server.Context, logger log.Logger, clientCtx client.Cont
 }
 
 // BlockNumber returns the current block number in abci app state.
-// Because abci app state could lag behind from tendermint latest block, it's more stable
-// for the client to use the latest block number in abci app state than tendermint rpc.
+// Because abci app state could lag behind from reapchain latest block, it's more stable
+// for the client to use the latest block number in abci app state than reapchain rpc.
 func (e *EVMBackend) BlockNumber() (hexutil.Uint64, error) {
 	// do any grpc query, ignore the response and use the returned block height
 	var header metadata.MD
@@ -294,7 +294,7 @@ func (e *EVMBackend) GetTendermintBlockByNumber(blockNum types.BlockNumber) (*tm
 	resBlock, err := e.clientCtx.Client.Block(e.ctx, &height)
 	if err != nil {
 		if resBlock, err = e.clientCtx.Client.Block(e.ctx, nil); err != nil {
-			e.logger.Debug("tendermint client failed to get latest block", "height", height, "error", err.Error())
+			e.logger.Debug("reapchain client failed to get latest block", "height", height, "error", err.Error())
 			return nil, nil
 		}
 	}
@@ -311,7 +311,7 @@ func (e *EVMBackend) GetTendermintBlockByNumber(blockNum types.BlockNumber) (*tm
 func (e *EVMBackend) GetTendermintBlockByHash(blockHash common.Hash) (*tmrpctypes.ResultBlock, error) {
 	resBlock, err := e.clientCtx.Client.BlockByHash(e.ctx, blockHash.Bytes())
 	if err != nil {
-		e.logger.Debug("tendermint client failed to get block", "blockHash", blockHash.Hex(), "error", err.Error())
+		e.logger.Debug("reapchain client failed to get block", "blockHash", blockHash.Hex(), "error", err.Error())
 	}
 
 	if resBlock == nil || resBlock.Block == nil {
@@ -440,7 +440,7 @@ func (e *EVMBackend) EthBlockFromTendermint(
 	gasUsed := uint64(0)
 
 	for _, txsResult := range txResults {
-		// workaround for cosmos-sdk bug. https://github.com/cosmos/cosmos-sdk/issues/10832
+		// workaround for cosmos-sdk bug. https://github.com/reapchain/cosmos-sdk/issues/10832
 		if txsResult.GetCode() == 11 && txsResult.GetLog() == "no block gas left to run tx: out of gas" {
 			// block gas limit has exceeded, other txs must have failed with same reason.
 			break
@@ -738,7 +738,7 @@ func (e *EVMBackend) GetTransactionByHash(txHash common.Hash) (*types.RPCTransac
 
 // GetTxByEthHash uses `/tx_query` to find transaction by ethereum tx hash
 // TODO: Don't need to convert once hashing is fixed on Tendermint
-// https://github.com/tendermint/tendermint/issues/6539
+// https://github.com/reapchain/reapchain-core/issues/6539
 func (e *EVMBackend) GetTxByEthHash(hash common.Hash) (*tmrpctypes.ResultTx, error) {
 	query := fmt.Sprintf("%s.%s='%s'", evmtypes.TypeMsgEthereumTx, evmtypes.AttributeKeyEthereumTxHash, hash.Hex())
 	resTxs, err := e.clientCtx.Client.TxSearch(e.ctx, query, false, nil, nil, "")

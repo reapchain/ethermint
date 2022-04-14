@@ -3,23 +3,23 @@
 package rpc
 
 import (
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/server"
 
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/tharsis/ethermint/rpc/ethereum/backend"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/debug"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/eth"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/eth/filters"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/miner"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/net"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/personal"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/txpool"
-	"github.com/tharsis/ethermint/rpc/ethereum/namespaces/web3"
-	"github.com/tharsis/ethermint/rpc/ethereum/types"
+	"github.com/reapchain/ethermint/rpc/ethereum/backend"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/debug"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/eth"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/eth/filters"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/miner"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/net"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/personal"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/txpool"
+	"github.com/reapchain/ethermint/rpc/ethereum/namespaces/web3"
+	"github.com/reapchain/ethermint/rpc/ethereum/types"
 
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )
 
 // RPC namespaces and API version

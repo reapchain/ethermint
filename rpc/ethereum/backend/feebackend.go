@@ -7,9 +7,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/rpc"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tharsis/ethermint/rpc/ethereum/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
+	rpctypes "github.com/reapchain/ethermint/rpc/ethereum/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 type (
@@ -168,13 +168,13 @@ func (e *EVMBackend) FeeHistory(
 			return nil, err
 		}
 
-		// tendermint block
+		// reapchain block
 		tendermintblock, err := e.GetTendermintBlockByNumber(rpctypes.BlockNumber(blockID))
 		if tendermintblock == nil {
 			return nil, err
 		}
 
-		// tendermint block result
+		// reapchain block result
 		tendermintBlockResult, err := e.clientCtx.Client.BlockResults(e.ctx, &tendermintblock.Block.Height)
 		if tendermintBlockResult == nil {
 			e.logger.Debug("block result not found", "height", tendermintblock.Block.Height, "error", err.Error())

@@ -5,10 +5,10 @@ import (
 	"errors"
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/tharsis/ethermint/x/evm/statedb"
+	"github.com/reapchain/ethermint/x/evm/statedb"
 )
 
 var (

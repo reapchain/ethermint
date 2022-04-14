@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/reapchain/cosmos-sdk/types/module"
 
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // RandomizedGenState generates a random GenesisState for nft

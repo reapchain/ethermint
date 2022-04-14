@@ -5,15 +5,15 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/input"
+	"github.com/reapchain/cosmos-sdk/crypto"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 
-	"github.com/tharsis/ethermint/crypto/hd"
+	"github.com/reapchain/ethermint/crypto/hd"
 )
 
 // UnsafeImportKeyCommand imports private keys from a keyfile.

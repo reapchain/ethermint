@@ -2,11 +2,11 @@ package keys
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
+	"github.com/reapchain/reapchain-core/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/flags"
 
-	"github.com/cosmos/cosmos-sdk/client/keys"
+	"github.com/reapchain/cosmos-sdk/client/keys"
 )
 
 // Commands registers a sub-tree of commands to interact with

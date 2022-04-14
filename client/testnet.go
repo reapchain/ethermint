@@ -13,37 +13,37 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 
 	"github.com/spf13/cobra"
-	tmconfig "github.com/tendermint/tendermint/config"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
+	tmconfig "github.com/reapchain/reapchain-core/config"
+	tmrand "github.com/reapchain/reapchain-core/libs/rand"
+	"github.com/reapchain/reapchain-core/types"
+	tmtime "github.com/reapchain/reapchain-core/types/time"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkserver "github.com/cosmos/cosmos-sdk/server"
-	srvconfig "github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	mintypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/tx"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	sdkserver "github.com/reapchain/cosmos-sdk/server"
+	srvconfig "github.com/reapchain/cosmos-sdk/server/config"
+	"github.com/reapchain/cosmos-sdk/testutil"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
+	crisistypes "github.com/reapchain/cosmos-sdk/x/crisis/types"
+	"github.com/reapchain/cosmos-sdk/x/genutil"
+	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
+	mintypes "github.com/reapchain/cosmos-sdk/x/mint/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	"github.com/tharsis/ethermint/crypto/hd"
-	"github.com/tharsis/ethermint/server/config"
-	srvflags "github.com/tharsis/ethermint/server/flags"
-	ethermint "github.com/tharsis/ethermint/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/crypto/hd"
+	"github.com/reapchain/ethermint/server/config"
+	srvflags "github.com/reapchain/ethermint/server/flags"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
-	"github.com/tharsis/ethermint/testutil/network"
+	"github.com/reapchain/ethermint/testutil/network"
 )
 
 var (
@@ -109,7 +109,7 @@ func NewTestnetCmd(mbm module.BasicManager, genBalIterator banktypes.GenesisBala
 	return testnetCmd
 }
 
-// get cmd to initialize all files for tendermint testnet and application
+// get cmd to initialize all files for reapchain testnet and application
 func testnetInitFilesCmd(mbm module.BasicManager, genBalIterator banktypes.GenesisBalancesIterator) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "init-files",
@@ -188,7 +188,7 @@ Example:
 	}
 
 	addTestnetFlagsToCmd(cmd)
-	cmd.Flags().Bool(flagEnableLogging, false, "Enable INFO logging of tendermint validator nodes")
+	cmd.Flags().Bool(flagEnableLogging, false, "Enable INFO logging of reapchain validator nodes")
 	cmd.Flags().String(flagRPCAddress, "tcp://0.0.0.0:26657", "the RPC address to listen on")
 	cmd.Flags().String(flagAPIAddress, "tcp://0.0.0.0:1317", "the address to listen on for REST API")
 	cmd.Flags().String(srvflags.GRPCAddress, config.DefaultGRPCAddress, "the gRPC server address to listen on")

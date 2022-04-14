@@ -11,39 +11,39 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/reapchain/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 
 	"github.com/spf13/cobra"
 
 	"google.golang.org/grpc"
 
-	abciserver "github.com/tendermint/tendermint/abci/server"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/rpc/client/local"
+	abciserver "github.com/reapchain/reapchain-core/abci/server"
+	tcmd "github.com/reapchain/reapchain-core/cmd/reapchain/commands"
+	tmos "github.com/reapchain/reapchain-core/libs/os"
+	"github.com/reapchain/reapchain-core/node"
+	"github.com/reapchain/reapchain-core/p2p"
+	pvm "github.com/reapchain/reapchain-core/privval"
+	"github.com/reapchain/reapchain-core/proxy"
+	"github.com/reapchain/reapchain-core/rpc/client/local"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/server/rosetta"
-	crgserver "github.com/cosmos/cosmos-sdk/server/rosetta/lib/server"
+	"github.com/reapchain/cosmos-sdk/server/rosetta"
+	crgserver "github.com/reapchain/cosmos-sdk/server/rosetta/lib/server"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
-	servergrpc "github.com/cosmos/cosmos-sdk/server/grpc"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server/api"
+	serverconfig "github.com/reapchain/cosmos-sdk/server/config"
+	servergrpc "github.com/reapchain/cosmos-sdk/server/grpc"
+	"github.com/reapchain/cosmos-sdk/server/types"
+	storetypes "github.com/reapchain/cosmos-sdk/store/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	ethdebug "github.com/tharsis/ethermint/rpc/ethereum/namespaces/debug"
-	"github.com/tharsis/ethermint/server/config"
-	srvflags "github.com/tharsis/ethermint/server/flags"
+	ethdebug "github.com/reapchain/ethermint/rpc/ethereum/namespaces/debug"
+	"github.com/reapchain/ethermint/server/config"
+	srvflags "github.com/reapchain/ethermint/server/flags"
 )
 
 // StartCmd runs the service passed in, either stand-alone or in-process with
@@ -126,7 +126,7 @@ which accepts a path for the resulting pprof file.
 	}
 
 	cmd.Flags().String(flags.FlagHome, defaultNodeHome, "The application home directory")
-	cmd.Flags().Bool(srvflags.WithTendermint, true, "Run abci app embedded in-process with tendermint")
+	cmd.Flags().Bool(srvflags.WithTendermint, true, "Run abci app embedded in-process with reapchain")
 	cmd.Flags().String(srvflags.Address, "tcp://0.0.0.0:26658", "Listen address")
 	cmd.Flags().String(srvflags.Transport, "socket", "Transport protocol: socket, grpc")
 	cmd.Flags().String(srvflags.TraceStore, "", "Enable KVStore tracing to an output file")
@@ -315,13 +315,13 @@ func startInProcess(ctx *server.Context, clientCtx client.Context, appCreator ty
 	}
 
 	if err := tmNode.Start(); err != nil {
-		logger.Error("failed start tendermint server", "error", err.Error())
+		logger.Error("failed start reapchain server", "error", err.Error())
 		return err
 	}
 
 	// Add the tx service to the gRPC router. We only need to register this
 	// service if API or gRPC or JSONRPC is enabled, and avoid doing so in the general
-	// case, because it spawns a new local tendermint RPC client.
+	// case, because it spawns a new local reapchain RPC client.
 	if config.API.Enable || config.GRPC.Enable || config.JSONRPC.Enable {
 		clientCtx = clientCtx.WithClient(local.New(tmNode))
 

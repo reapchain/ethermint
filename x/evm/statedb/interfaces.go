@@ -1,7 +1,7 @@
 package statedb
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

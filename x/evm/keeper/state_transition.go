@@ -4,16 +4,16 @@ import (
 	"math"
 	"math/big"
 
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/evm/statedb"
-	"github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/statedb"
+	"github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
@@ -143,7 +143,7 @@ func (k Keeper) GetHashFn(ctx sdk.Context) vm.GetHashFunc {
 			contextBlockHeader := ctx.BlockHeader()
 			header, err := tmtypes.HeaderFromProto(&contextBlockHeader)
 			if err != nil {
-				k.Logger(ctx).Error("failed to cast tendermint header from proto", "error", err)
+				k.Logger(ctx).Error("failed to cast reapchain header from proto", "error", err)
 				return common.Hash{}
 			}
 
@@ -161,7 +161,7 @@ func (k Keeper) GetHashFn(ctx sdk.Context) vm.GetHashFunc {
 
 			header, err := tmtypes.HeaderFromProto(&histInfo.Header)
 			if err != nil {
-				k.Logger(ctx).Error("failed to cast tendermint header from proto", "error", err)
+				k.Logger(ctx).Error("failed to cast reapchain header from proto", "error", err)
 				return common.Hash{}
 			}
 
@@ -189,7 +189,7 @@ func (k Keeper) GetHashFn(ctx sdk.Context) vm.GetHashFunc {
 // consideration the amount of gas returned. Finally, the context is updated with the EVM gas consumed value prior to
 // returning.
 //
-// For relevant discussion see: https://github.com/cosmos/cosmos-sdk/discussions/9072
+// For relevant discussion see: https://github.com/reapchain/cosmos-sdk/discussions/9072
 func (k *Keeper) ApplyTransaction(ctx sdk.Context, tx *ethtypes.Transaction) (*types.MsgEthereumTxResponse, error) {
 	var (
 		bloom        *big.Int

@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
 	"github.com/pkg/errors"
@@ -22,15 +22,15 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/tendermint/tendermint/libs/log"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	rpcfilters "github.com/tharsis/ethermint/rpc/ethereum/namespaces/eth/filters"
-	"github.com/tharsis/ethermint/rpc/ethereum/pubsub"
-	"github.com/tharsis/ethermint/rpc/ethereum/types"
-	"github.com/tharsis/ethermint/server/config"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	rpcfilters "github.com/reapchain/ethermint/rpc/ethereum/namespaces/eth/filters"
+	"github.com/reapchain/ethermint/rpc/ethereum/pubsub"
+	"github.com/reapchain/ethermint/rpc/ethereum/types"
+	"github.com/reapchain/ethermint/server/config"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 type WebsocketsServer interface {

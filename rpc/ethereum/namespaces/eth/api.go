@@ -7,7 +7,7 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/tharsis/ethermint/ethereum/eip712"
+	"github.com/reapchain/ethermint/ethereum/eip712"
 
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"
 
@@ -19,15 +19,15 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
 	"github.com/ethereum/go-ethereum/accounts/keystore"
 	"github.com/ethereum/go-ethereum/common"
@@ -35,11 +35,11 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/tharsis/ethermint/crypto/hd"
-	"github.com/tharsis/ethermint/rpc/ethereum/backend"
-	rpctypes "github.com/tharsis/ethermint/rpc/ethereum/types"
-	ethermint "github.com/tharsis/ethermint/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/crypto/hd"
+	"github.com/reapchain/ethermint/rpc/ethereum/backend"
+	rpctypes "github.com/reapchain/ethermint/rpc/ethereum/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 // PublicAPI is the eth_ prefixed set of APIs in the Web3 JSON-RPC spec.
@@ -604,7 +604,7 @@ func (e *PublicAPI) Resend(ctx context.Context, args evmtypes.TransactionArgs, g
 	}
 
 	for _, tx := range pending {
-		// FIXME does Resend api possible at all?  https://github.com/tharsis/ethermint/issues/905
+		// FIXME does Resend api possible at all?  https://github.com/reapchain/ethermint/issues/905
 		p, err := evmtypes.UnwrapEthereumMsg(tx, common.Hash{})
 		if err != nil {
 			// not valid ethereum tx

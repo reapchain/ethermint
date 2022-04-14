@@ -3,9 +3,9 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 var _ types.QueryServer = Keeper{}

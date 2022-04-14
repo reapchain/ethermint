@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // GetParams returns the total set of evm parameters.

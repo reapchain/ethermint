@@ -8,11 +8,11 @@ import (
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/reapchain/cosmos-sdk/crypto/hd"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 const (

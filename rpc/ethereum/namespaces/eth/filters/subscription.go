@@ -7,7 +7,7 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/eth/filters"
 	"github.com/ethereum/go-ethereum/rpc"
-	coretypes "github.com/tendermint/tendermint/rpc/core/types"
+	coretypes "github.com/reapchain/reapchain-core/rpc/core/types"
 )
 
 // Subscription defines a wrapper for the private subscription
@@ -56,7 +56,7 @@ func (s *Subscription) Err() <-chan error {
 	return s.err
 }
 
-// Event returns the tendermint result event channel
+// Event returns the reapchain result event channel
 func (s *Subscription) Event() <-chan coretypes.ResultEvent {
 	return s.eventCh
 }
