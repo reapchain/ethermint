@@ -19,9 +19,9 @@ require (
 	github.com/onsi/ginkgo v1.16.5
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
-	github.com/reapchain/cosmos-sdk v0.45.1
-	github.com/reapchain/ibc-go v0.3.0
-	github.com/reapchain/reapchain-core v0.1.2
+	github.com/reapchain/cosmos-sdk v0.45.1-reapsdkv1
+	github.com/reapchain/ibc-go v0.3.0-reapibcv1
+	github.com/reapchain/reapchain-core v0.1.4
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/rs/cors v1.8.2
 	github.com/spf13/cast v1.4.1
