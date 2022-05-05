@@ -29,8 +29,8 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
-	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
 	"github.com/reapchain/reapchain-core/version"
 )
 

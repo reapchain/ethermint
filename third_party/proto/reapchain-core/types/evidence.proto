@@ -1,12 +1,12 @@
 syntax = "proto3";
 package reapchain.types;
 
-option go_package = "github.com/reapchain/reapchain-core/proto/reapchain/types";
+option go_package = "github.com/reapchain/reapchain-core/proto/reapchain-core/types";
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
-import "reapchain/types/types.proto";
-import "reapchain/types/validator.proto";
+import "reapchain-core/types/types.proto";
+import "reapchain-core/types/validator.proto";
 
 message Evidence {
   oneof sum {

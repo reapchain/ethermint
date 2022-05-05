@@ -28,12 +28,12 @@ import (
 	ethparams "github.com/ethereum/go-ethereum/params"
 	ethrlp "github.com/ethereum/go-ethereum/rlp"
 
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 	"github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
-	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
 	"github.com/reapchain/reapchain-core/version"
-	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 var (

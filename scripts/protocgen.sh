@@ -20,7 +20,7 @@ protoc_gen_doc
 
 proto_dirs=$(find ./proto -path -prune -o -name '*.proto' -print0 | xargs -0 -n1 dirname | sort | uniq)
 for dir in $proto_dirs; do
-  buf protoc \
+  protoc \
   -I "proto" \
   -I "third_party/proto" \
   --gocosmos_out=plugins=interfacetype+grpc,\
@@ -31,7 +31,7 @@ Mgoogle/protobuf/any.proto=github.com/reapchain/cosmos-sdk/codec/types:. \
 done
 
 # command to generate docs using protoc-gen-doc
-buf protoc \
+protoc \
 -I "proto" \
 -I "third_party/proto" \
 --doc_out=./docs/api \

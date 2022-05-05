@@ -27,13 +27,13 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/simulation"
 	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
+	evmenc "github.com/reapchain/ethermint/encoding"
 	ibctransfertypes "github.com/reapchain/ibc-go/modules/apps/transfer/types"
 	ibchost "github.com/reapchain/ibc-go/modules/core/24-host"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	dbm "github.com/tendermint/tm-db"
-	evmenc "github.com/reapchain/ethermint/encoding"
 )
 
 // MakeEncodingConfig creates the EncodingConfig

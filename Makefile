@@ -447,9 +447,9 @@ GOGO_PROTO_URL      = https://raw.githubusercontent.com/regen-network/protobuf/c
 COSMOS_SDK_URL      = https://raw.githubusercontent.com/cosmos/cosmos-sdk/v0.43.0
 COSMOS_PROTO_URL    = https://raw.githubusercontent.com/regen-network/cosmos-proto/master
 
-TM_CRYPTO_TYPES     = third_party/proto/reapchain/crypto
-TM_ABCI_TYPES       = third_party/proto/reapchain/abci
-TM_TYPES            = third_party/proto/reapchain/types
+TM_CRYPTO_TYPES     = third_party/proto/reapchain-core/crypto
+TM_ABCI_TYPES       = third_party/proto/reapchain-core/abci
+TM_TYPES            = third_party/proto/reapchain-core/types
 
 GOGO_PROTO_TYPES    = third_party/proto/gogoproto
 

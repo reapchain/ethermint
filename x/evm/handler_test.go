@@ -16,10 +16,10 @@ import (
 	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
 	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
-	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
@@ -37,8 +37,8 @@ import (
 	"github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
-	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
 
 	"github.com/reapchain/reapchain-core/version"
 )

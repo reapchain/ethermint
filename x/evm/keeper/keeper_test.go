@@ -20,8 +20,8 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	tmjson "github.com/reapchain/reapchain-core/libs/json"
 	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
+	tmjson "github.com/reapchain/reapchain-core/libs/json"
 
 	"github.com/reapchain/ethermint/app"
 	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
@@ -40,8 +40,8 @@ import (
 
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
-	tmversion "github.com/reapchain/reapchain-core/proto/reapchain/version"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
 	"github.com/reapchain/reapchain-core/version"
 )
 

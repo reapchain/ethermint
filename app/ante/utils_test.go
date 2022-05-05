@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/reapchain/cosmos-sdk/codec"
 	"github.com/reapchain/cosmos-sdk/x/auth/legacy/legacytx"
 	types2 "github.com/reapchain/cosmos-sdk/x/bank/types"
 	types3 "github.com/reapchain/cosmos-sdk/x/staking/types"
-	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/reapchain/ethermint/ethereum/eip712"
 	"github.com/reapchain/ethermint/types"
 
@@ -38,7 +38,7 @@ import (
 	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 )
 
 type AnteTestSuite struct {
