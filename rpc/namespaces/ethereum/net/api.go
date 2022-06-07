@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
+	"github.com/reapchain/cosmos-sdk/client"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/client"
 	ethermint "github.com/tharsis/ethermint/types"
 )
 

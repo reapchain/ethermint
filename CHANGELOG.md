@@ -68,7 +68,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* (deps) [tharsis#1046](https://github.com/tharsis/ethermint/pull/1046) Bump Cosmos SDK version to [`v0.45.3`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.45.3)
+* (deps) [tharsis#1046](https://github.com/tharsis/ethermint/pull/1046) Bump Cosmos SDK version to [`v0.45.3`](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.45.3)
 * (rpc) [tharsis#1056](https://github.com/tharsis/ethermint/pull/1056) Make json-rpc namespaces extensible
 
 ### Bug Fixes
@@ -85,7 +85,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* (deps) [tharsis#1029](https://github.com/tharsis/ethermint/pull/1029) Bump Cosmos SDK version to [`v0.45.2`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.45.2)
+* (deps) [tharsis#1029](https://github.com/tharsis/ethermint/pull/1029) Bump Cosmos SDK version to [`v0.45.2`](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.45.2)
 * (evm) [tharsis#1025](https://github.com/tharsis/ethermint/pull/1025) Allow to append logs after a post processing hook.
 
 ## [v0.12.2] - 2022-03-30
@@ -146,7 +146,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### State Machine Breaking
 
-* (deps) [tharsis#912](https://github.com/tharsis/ethermint/pull/912) Bump Cosmos SDK version to [`v0.45.1`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.45.1)
+* (deps) [tharsis#912](https://github.com/tharsis/ethermint/pull/912) Bump Cosmos SDK version to [`v0.45.1`](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.45.1)
 * (evm) [tharsis#840](https://github.com/tharsis/ethermint/pull/840) Store empty topics as empty array rather than nil.
 * (feemarket) [tharsis#822](https://github.com/tharsis/ethermint/pull/822) Update EIP1559 base fee in `BeginBlock`.
 * (evm) [tharsis#817](https://github.com/tharsis/ethermint/pull/817) Use `effectiveGasPrice` in ante handler, add `effectiveGasPrice` to tx receipt.
@@ -257,7 +257,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 ### Improvements
 
 * (tests) [tharsis#704](https://github.com/tharsis/ethermint/pull/704) Introduce E2E testing framework for clients
-* (deps) [tharsis#737](https://github.com/tharsis/ethermint/pull/737) Bump ibc-go to [`v2.0.0`](https://github.com/cosmos/ibc-go/releases/tag/v2.0.0)
+* (deps) [tharsis#737](https://github.com/tharsis/ethermint/pull/737) Bump ibc-go to [`v2.0.0`](https://github.com/reapchain/ibc-go/releases/tag/v2.0.0)
 * (rpc) [tharsis#671](https://github.com/tharsis/ethermint/pull/671) Don't pass base fee externally for `EthCall`/`EthEstimateGas` apis.
 * (evm) [tharsis#674](https://github.com/tharsis/ethermint/pull/674) Refactor `ApplyMessage`, remove
   `ApplyNativeMessage`.
@@ -267,9 +267,9 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* (deps) [tharsis#692](https://github.com/tharsis/ethermint/pull/692) Bump Cosmos SDK version to [`v0.44.3`](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.44.3).
+* (deps) [tharsis#692](https://github.com/tharsis/ethermint/pull/692) Bump Cosmos SDK version to [`v0.44.3`](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.44.3).
 * (rpc) [tharsis#679](https://github.com/tharsis/ethermint/pull/679) Fix file close handle.
-* (deps) [tharsis#668](https://github.com/tharsis/ethermint/pull/668) Bump Tendermint version to [`v0.34.14`](https://github.com/tendermint/tendermint/releases/tag/v0.34.14).
+* (deps) [tharsis#668](https://github.com/tharsis/ethermint/pull/668) Bump Tendermint version to [`v0.34.14`](https://github.com/reapchain/reapchain-core/releases/tag/v0.34.14).
 
 ### Bug Fixes
 
@@ -290,9 +290,9 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ### Improvements
 
-* (deps) [tharsis#621](https://github.com/tharsis/ethermint/pull/621) Bump IBC-go to [`v1.2.1`](https://github.com/cosmos/ibc-go/releases/tag/v1.2.1)
+* (deps) [tharsis#621](https://github.com/tharsis/ethermint/pull/621) Bump IBC-go to [`v1.2.1`](https://github.com/reapchain/ibc-go/releases/tag/v1.2.1)
 * (evm) [tharsis#613](https://github.com/tharsis/ethermint/pull/613) Refactor `traceTx`
-* (deps) [tharsis#610](https://github.com/tharsis/ethermint/pull/610) Bump Cosmos SDK to [v0.44.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.44.1).
+* (deps) [tharsis#610](https://github.com/tharsis/ethermint/pull/610) Bump Cosmos SDK to [v0.44.1](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.44.1).
 
 ### Bug Fixes
 
@@ -378,10 +378,10 @@ the Tracer type used to collect execution traces from the EVM transaction execut
 * (server) [tharsis#343](https://github.com/tharsis/ethermint/pull/343) Define a wrap tendermint logger `Handler` go-ethereum's `root` logger.
 * (rpc) [tharsis#457](https://github.com/tharsis/ethermint/pull/457) Configure RPC gas cap through app config.
 * (evm) [tharsis#434](https://github.com/tharsis/ethermint/pull/434) Support different `Tracer` types for the EVM.
-* (deps) [tharsis#427](https://github.com/tharsis/ethermint/pull/427) Bump ibc-go to [`v1.0.0`](https://github.com/cosmos/ibc-go/releases/tag/v1.0.0)
+* (deps) [tharsis#427](https://github.com/tharsis/ethermint/pull/427) Bump ibc-go to [`v1.0.0`](https://github.com/reapchain/ibc-go/releases/tag/v1.0.0)
 * (gRPC) [tharsis#239](https://github.com/tharsis/ethermint/pull/239) Query `ChainConfig` via gRPC.
 * (rpc) [tharsis#181](https://github.com/tharsis/ethermint/pull/181) Use evm denomination for params on tx fee.
-* (deps) [tharsis#423](https://github.com/tharsis/ethermint/pull/423) Bump Cosmos SDK and Tendermint versions to [v0.43.0](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.43.0) and [v0.34.11](https://github.com/tendermint/tendermint/releases/tag/v0.34.11), respectively.
+* (deps) [tharsis#423](https://github.com/tharsis/ethermint/pull/423) Bump Cosmos SDK and Tendermint versions to [v0.43.0](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.43.0) and [v0.34.11](https://github.com/reapchain/reapchain-core/releases/tag/v0.34.11), respectively.
 * (evm) [tharsis#66](https://github.com/tharsis/ethermint/issues/66) Support legacy transaction types for signing.
 * (evm) [tharsis#24](https://github.com/tharsis/ethermint/pull/24) Implement metrics for `MsgEthereumTx`, state transitions, `BeginBlock` and `EndBlock`.
 * (rpc)  [tharsis#124](https://github.com/tharsis/ethermint/issues/124) Implement `txpool_content`, `txpool_inspect` and `txpool_status` RPC methods
@@ -466,10 +466,10 @@ the Tracer type used to collect execution traces from the EVM transaction execut
 
 ### Improvements
 
-* (deps) [tharsis#615](https://github.com/cosmos/ethermint/pull/615) Bump Cosmos SDK version to [v0.39.2](https://github.com/cosmos/cosmos-sdk/tag/v0.39.2)
+* (deps) [tharsis#615](https://github.com/cosmos/ethermint/pull/615) Bump Cosmos SDK version to [v0.39.2](https://github.com/reapchain/cosmos-sdk/tag/v0.39.2)
 * (deps) [tharsis#610](https://github.com/cosmos/ethermint/pull/610) Update Go dependency to 1.15+.
 * (evm) [tharsis#603](https://github.com/cosmos/ethermint/pull/603) Add state transition params that enable or disable the EVM `Call` and `Create` operations.
-* (deps) [tharsis#602](https://github.com/cosmos/ethermint/pull/602) Bump tendermint version to [v0.33.9](https://github.com/tendermint/tendermint/releases/tag/v0.33.9)
+* (deps) [tharsis#602](https://github.com/cosmos/ethermint/pull/602) Bump tendermint version to [v0.33.9](https://github.com/reapchain/reapchain-core/releases/tag/v0.33.9)
 
 ### Bug Fixes
 
@@ -546,7 +546,7 @@ corresponding Ethereum API namespace:
 
 ### Improvements
 
-* (sdk) [tharsis#386](https://github.com/cosmos/ethermint/pull/386) Bump Cosmos SDK version to [v0.39.1](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.39.1)
+* (sdk) [tharsis#386](https://github.com/cosmos/ethermint/pull/386) Bump Cosmos SDK version to [v0.39.1](https://github.com/reapchain/cosmos-sdk/releases/tag/v0.39.1)
 * (evm) [tharsis#181](https://github.com/cosmos/ethermint/issues/181) Updated EVM module to the recommended module structure.
 * (app) [tharsis#188](https://github.com/cosmos/ethermint/issues/186)  Misc cleanup:
   * (evm) Rename `EthereumTxMsg` --> `MsgEthereumTx` and `EmintMsg` --> `MsgEthermint` for consistency with SDK standards

@@ -5,9 +5,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/cosmos-sdk/simapp"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
 	"github.com/tharsis/ethermint/encoding"
 )

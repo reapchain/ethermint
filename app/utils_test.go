@@ -8,19 +8,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	paramstypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	"github.com/reapchain/cosmos-sdk/x/auth"
+	authkeeper "github.com/reapchain/cosmos-sdk/x/auth/keeper"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	paramstypes "github.com/reapchain/cosmos-sdk/x/params/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 
 	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
 	ethermint "github.com/tharsis/ethermint/types"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/simapp"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 )
 
 var maxTestingAccounts = 100

@@ -1,8 +1,8 @@
 package codec
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 
 	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
 )

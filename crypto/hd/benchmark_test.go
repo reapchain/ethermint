@@ -3,7 +3,7 @@ package hd
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 	ethermint "github.com/tharsis/ethermint/types"
 )
 

@@ -5,8 +5,8 @@ package rpc
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/server"
 
 	"github.com/ethereum/go-ethereum/rpc"
 
@@ -21,7 +21,7 @@ import (
 	"github.com/tharsis/ethermint/rpc/namespaces/ethereum/web3"
 	"github.com/tharsis/ethermint/rpc/types"
 
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )
 
 // RPC namespaces and API version

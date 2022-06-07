@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	amino "github.com/cosmos/cosmos-sdk/codec"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	amino "github.com/reapchain/cosmos-sdk/codec"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
+	"github.com/reapchain/cosmos-sdk/x/simulation"
 	"github.com/tharsis/ethermint/x/evm/types"
 )
 

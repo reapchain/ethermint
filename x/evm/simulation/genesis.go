@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/reapchain/cosmos-sdk/types/module"
 
 	"github.com/tharsis/ethermint/x/evm/types"
 )

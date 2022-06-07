@@ -4,14 +4,14 @@ import (
 	"encoding/json"
 	"fmt"
 
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 
-	servertypes "github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	servertypes "github.com/reapchain/cosmos-sdk/server/types"
+	"github.com/reapchain/cosmos-sdk/simapp"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	slashingtypes "github.com/reapchain/cosmos-sdk/x/slashing/types"
+	"github.com/reapchain/cosmos-sdk/x/staking"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
 	"github.com/tharsis/ethermint/encoding"
 )

@@ -1,8 +1,8 @@
 package keeper_test
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	"github.com/tharsis/ethermint/x/feemarket/types"
 )
 

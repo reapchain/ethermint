@@ -4,8 +4,8 @@ import (
 	"github.com/spf13/cobra"
 	rpctypes "github.com/tharsis/ethermint/rpc/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
 
 	"github.com/tharsis/ethermint/x/evm/types"
 )

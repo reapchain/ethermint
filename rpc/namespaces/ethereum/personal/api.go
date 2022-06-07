@@ -8,16 +8,16 @@ import (
 
 	"github.com/tharsis/ethermint/rpc/backend"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client"
 
 	"github.com/tharsis/ethermint/crypto/hd"
 	ethermint "github.com/tharsis/ethermint/types"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/reapchain/reapchain-core/libs/log"
 
-	sdkcrypto "github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdkcrypto "github.com/reapchain/cosmos-sdk/crypto"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/common"

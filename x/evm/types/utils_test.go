@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	proto "github.com/gogo/protobuf/proto"
+	"github.com/reapchain/cosmos-sdk/client"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
 	"github.com/tharsis/ethermint/app"
 	"github.com/tharsis/ethermint/encoding"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"

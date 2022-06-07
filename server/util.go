@@ -8,13 +8,13 @@ import (
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
 	"github.com/spf13/cobra"
 
-	sdkserver "github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	sdkserver "github.com/reapchain/cosmos-sdk/server"
+	"github.com/reapchain/cosmos-sdk/server/types"
+	"github.com/reapchain/cosmos-sdk/version"
 
-	tmcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	tmlog "github.com/tendermint/tendermint/libs/log"
-	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
+	tmcmd "github.com/reapchain/reapchain-core/cmd/reapchain/commands"
+	tmlog "github.com/reapchain/reapchain-core/libs/log"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )
 
 // add server commands
@@ -30,7 +30,7 @@ func AddCommands(rootCmd *cobra.Command, defaultNodeHome string, appCreator type
 		sdkserver.ShowAddressCmd(),
 		sdkserver.VersionCmd(),
 		tmcmd.ResetAllCmd,
-		tmcmd.ResetStateCmd,
+		//tmcmd.ResetStateCmd,
 	)
 
 	startCmd := StartCmd(appCreator, defaultNodeHome)

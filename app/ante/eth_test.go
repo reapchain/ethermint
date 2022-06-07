@@ -3,7 +3,7 @@ package ante_test
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	"github.com/tharsis/ethermint/app/ante"
 	"github.com/tharsis/ethermint/server/config"

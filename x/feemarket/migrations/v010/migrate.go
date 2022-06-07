@@ -3,9 +3,9 @@ package v010
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	v09types "github.com/tharsis/ethermint/x/feemarket/migrations/v09/types"
 	"github.com/tharsis/ethermint/x/feemarket/types"
 )

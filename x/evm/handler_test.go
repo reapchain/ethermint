@@ -8,26 +8,26 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmjson "github.com/tendermint/tendermint/libs/json"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	tmjson "github.com/reapchain/reapchain-core/libs/json"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/reapchain/cosmos-sdk/simapp"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/baseapp"
+	"github.com/reapchain/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	"github.com/tharsis/ethermint/app"
 	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
@@ -37,11 +37,11 @@ import (
 	"github.com/tharsis/ethermint/x/evm/statedb"
 	"github.com/tharsis/ethermint/x/evm/types"
 
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
 
-	"github.com/tendermint/tendermint/version"
+	"github.com/reapchain/reapchain-core/version"
 )
 
 type EvmTestSuite struct {

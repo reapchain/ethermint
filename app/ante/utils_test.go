@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	types2 "github.com/cosmos/cosmos-sdk/x/bank/types"
-	types3 "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/reapchain/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/x/auth/legacy/legacytx"
+	types2 "github.com/reapchain/cosmos-sdk/x/bank/types"
+	types3 "github.com/reapchain/cosmos-sdk/x/staking/types"
 	"github.com/tharsis/ethermint/ethereum/eip712"
 	"github.com/tharsis/ethermint/types"
 
@@ -18,17 +18,17 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/tx"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	"github.com/reapchain/cosmos-sdk/simapp"
+	"github.com/reapchain/cosmos-sdk/testutil/testdata"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/reapchain/cosmos-sdk/x/auth/signing"
+	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
 	"github.com/tharsis/ethermint/app"
 	ante "github.com/tharsis/ethermint/app/ante"
@@ -38,7 +38,7 @@ import (
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
 
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 )
 
 type AnteTestSuite struct {

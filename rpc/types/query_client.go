@@ -3,12 +3,12 @@ package types
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/reapchain/cosmos-sdk/types/tx"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/proto/tendermint/crypto"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	"github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client"
 
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
@@ -37,7 +37,7 @@ func NewQueryClient(clientCtx client.Context) *QueryClient {
 // tendermint height to perform the query should be set in the client context. The query will be
 // performed at one below this height (at the IAVL version) in order to obtain the correct merkle
 // proof. Proof queries at height less than or equal to 2 are not supported.
-// Issue: https://github.com/cosmos/cosmos-sdk/issues/6567
+// Issue: https://github.com/reapchain/cosmos-sdk/issues/6567
 func (QueryClient) GetProof(clientCtx client.Context, storeKey string, key []byte) ([]byte, *crypto.ProofOps, error) {
 	height := clientCtx.Height
 	// ABCI queries at height less than or equal to 2 are not supported.

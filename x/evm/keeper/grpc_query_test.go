@@ -12,7 +12,7 @@ import (
 	ethparams "github.com/ethereum/go-ethereum/params"
 	"github.com/tharsis/ethermint/x/evm/statedb"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
 	"github.com/tharsis/ethermint/server/config"

@@ -19,13 +19,13 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
 
 	"github.com/tharsis/ethermint/rpc/types"
 	ethermint "github.com/tharsis/ethermint/types"
@@ -362,7 +362,7 @@ func (b *Backend) EthBlockFromTendermint(
 	gasUsed := uint64(0)
 
 	for _, txsResult := range txResults {
-		// workaround for cosmos-sdk bug. https://github.com/cosmos/cosmos-sdk/issues/10832
+		// workaround for cosmos-sdk bug. https://github.com/reapchain/cosmos-sdk/issues/10832
 		if txsResult.GetCode() == 11 && txsResult.GetLog() == "no block gas left to run tx: out of gas" {
 			// block gas limit has exceeded, other txs must have failed with same reason.
 			break
@@ -660,7 +660,7 @@ func (b *Backend) GetTransactionByHash(txHash common.Hash) (*types.RPCTransactio
 
 // GetTxByEthHash uses `/tx_query` to find transaction by ethereum tx hash
 // TODO: Don't need to convert once hashing is fixed on Tendermint
-// https://github.com/tendermint/tendermint/issues/6539
+// https://github.com/reapchain/reapchain-core/issues/6539
 func (b *Backend) GetTxByEthHash(hash common.Hash) (*tmrpctypes.ResultTx, error) {
 	query := fmt.Sprintf("%s.%s='%s'", evmtypes.TypeMsgEthereumTx, evmtypes.AttributeKeyEthereumTxHash, hash.Hex())
 	resTxs, err := b.clientCtx.Client.TxSearch(b.ctx, query, false, nil, nil, "")
@@ -927,8 +927,8 @@ func (b *Backend) BaseFee(height int64) (*big.Int, error) {
 // FeeHistory returns data relevant for fee estimation based on the specified range of blocks.
 func (b *Backend) FeeHistory(
 	userBlockCount rpc.DecimalOrHex, // number blocks to fetch, maximum is 100
-	lastBlock rpc.BlockNumber, // the block to start search , to oldest
-	rewardPercentiles []float64, // percentiles to fetch reward
+	lastBlock rpc.BlockNumber,       // the block to start search , to oldest
+	rewardPercentiles []float64,     // percentiles to fetch reward
 ) (*types.FeeHistoryResult, error) {
 	blockEnd := int64(lastBlock)
 

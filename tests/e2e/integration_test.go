@@ -7,12 +7,12 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
 	"github.com/tharsis/ethermint/rpc/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 
 	// . "github.com/onsi/ginkgo"
@@ -20,7 +20,6 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"

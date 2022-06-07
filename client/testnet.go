@@ -12,30 +12,30 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
+	tmconfig "github.com/reapchain/reapchain-core/config"
+	tmrand "github.com/reapchain/reapchain-core/libs/rand"
+	"github.com/reapchain/reapchain-core/types"
+	tmtime "github.com/reapchain/reapchain-core/types/time"
 	"github.com/spf13/cobra"
-	tmconfig "github.com/tendermint/tendermint/config"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkserver "github.com/cosmos/cosmos-sdk/server"
-	srvconfig "github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	crisistypes "github.com/cosmos/cosmos-sdk/x/crisis/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	mintypes "github.com/cosmos/cosmos-sdk/x/mint/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/tx"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
+	sdkserver "github.com/reapchain/cosmos-sdk/server"
+	srvconfig "github.com/reapchain/cosmos-sdk/server/config"
+	"github.com/reapchain/cosmos-sdk/testutil"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
+	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
+	crisistypes "github.com/reapchain/cosmos-sdk/x/crisis/types"
+	"github.com/reapchain/cosmos-sdk/x/genutil"
+	genutiltypes "github.com/reapchain/cosmos-sdk/x/genutil/types"
+	govtypes "github.com/reapchain/cosmos-sdk/x/gov/types"
+	mintypes "github.com/reapchain/cosmos-sdk/x/mint/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
 	"github.com/tharsis/ethermint/crypto/hd"
 	"github.com/tharsis/ethermint/server/config"
@@ -309,6 +309,7 @@ func initTestnetFiles(
 			stakingtypes.NewDescription(nodeDirName, "", "", "", ""),
 			stakingtypes.NewCommissionRates(sdk.OneDec(), sdk.OneDec(), sdk.OneDec()),
 			sdk.OneInt(),
+			"standing",
 		)
 		if err != nil {
 			return err
