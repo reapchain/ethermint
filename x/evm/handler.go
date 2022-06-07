@@ -4,7 +4,7 @@ import (
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // NewHandler returns a handler for Ethermint type messages.

@@ -4,7 +4,7 @@ import (
 	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 // RegisterInterfaces register the Ethermint key concrete types.

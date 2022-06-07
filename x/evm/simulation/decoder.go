@@ -6,7 +6,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/reapchain/cosmos-sdk/types/kv"
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

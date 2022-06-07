@@ -21,9 +21,9 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 
-	"github.com/tharsis/ethermint/rpc/backend"
-	rpctypes "github.com/tharsis/ethermint/rpc/types"
-	"github.com/tharsis/ethermint/server/config"
+	"github.com/reapchain/ethermint/rpc/backend"
+	rpctypes "github.com/reapchain/ethermint/rpc/types"
+	"github.com/reapchain/ethermint/server/config"
 )
 
 // API is the private miner prefixed set of APIs in the Miner JSON-RPC spec.

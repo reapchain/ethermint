@@ -9,9 +9,9 @@ import (
 	"github.com/reapchain/cosmos-sdk/client"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
-	"github.com/tharsis/ethermint/app"
-	"github.com/tharsis/ethermint/encoding"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/app"
+	"github.com/reapchain/ethermint/encoding"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/stretchr/testify/require"
 

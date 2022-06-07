@@ -6,10 +6,10 @@ import (
 	"testing"
 
 	"github.com/reapchain/cosmos-sdk/simapp"
+	"github.com/reapchain/ethermint/encoding"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
-	"github.com/tharsis/ethermint/encoding"
 )
 
 func BenchmarkEthermintApp_ExportAppStateAndValidators(b *testing.B) {

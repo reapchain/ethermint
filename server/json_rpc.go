@@ -12,9 +12,9 @@ import (
 	"github.com/reapchain/cosmos-sdk/client"
 	"github.com/reapchain/cosmos-sdk/server"
 	"github.com/reapchain/cosmos-sdk/server/types"
-	"github.com/tharsis/ethermint/rpc"
+	"github.com/reapchain/ethermint/rpc"
 
-	"github.com/tharsis/ethermint/server/config"
+	"github.com/reapchain/ethermint/server/config"
 )
 
 // StartJSONRPC starts the JSON-RPC server

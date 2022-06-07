@@ -13,8 +13,8 @@ import (
 	"github.com/reapchain/cosmos-sdk/codec"
 	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 
-	cryptocodec "github.com/tharsis/ethermint/crypto/codec"
-	ethermint "github.com/tharsis/ethermint/types"
+	cryptocodec "github.com/reapchain/ethermint/crypto/codec"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 func init() {

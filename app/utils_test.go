@@ -14,10 +14,10 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	paramstypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
-	ethermint "github.com/tharsis/ethermint/types"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
+	ethermint "github.com/reapchain/ethermint/types"
 
 	"github.com/reapchain/cosmos-sdk/simapp"
 	sdk "github.com/reapchain/cosmos-sdk/types"

@@ -13,7 +13,7 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tharsis/ethermint/encoding"
+	"github.com/reapchain/ethermint/encoding"
 )
 
 func TestEthermintAppExport(t *testing.T) {

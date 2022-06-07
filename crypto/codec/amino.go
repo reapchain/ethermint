@@ -7,7 +7,7 @@ import (
 	cryptocodec "github.com/reapchain/cosmos-sdk/crypto/codec"
 	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 // RegisterCrypto registers all crypto dependency types with the provided Amino

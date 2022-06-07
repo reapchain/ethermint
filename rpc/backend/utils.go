@@ -19,8 +19,8 @@ import (
 	"github.com/reapchain/reapchain-core/libs/log"
 	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
-	"github.com/tharsis/ethermint/rpc/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/rpc/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 type txGasAndReward struct {

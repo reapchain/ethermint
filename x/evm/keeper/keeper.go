@@ -15,9 +15,9 @@ import (
 	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/evm/statedb"
-	"github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/statedb"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // Keeper grants access to the EVM module state and implements the go-ethereum StateDB interface.

@@ -7,8 +7,8 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
 	sdk "github.com/reapchain/cosmos-sdk/types"
-	evmkeeper "github.com/tharsis/ethermint/x/evm/keeper"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	evmkeeper "github.com/reapchain/ethermint/x/evm/keeper"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestCheckSenderBalance() {

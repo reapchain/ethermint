@@ -9,8 +9,8 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	tx "github.com/reapchain/cosmos-sdk/types/tx"
-	"github.com/tharsis/ethermint/x/evm/statedb"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/statedb"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 // EVMKeeper defines the expected keeper interface used on the Eth AnteHandler

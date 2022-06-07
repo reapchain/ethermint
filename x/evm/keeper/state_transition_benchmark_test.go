@@ -11,8 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/reapchain/cosmos-sdk/crypto/keyring"
 	sdk "github.com/reapchain/cosmos-sdk/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 	"github.com/stretchr/testify/require"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
 )
 
 var templateAccessListTx = &ethtypes.AccessListTx{

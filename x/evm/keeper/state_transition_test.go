@@ -11,12 +11,12 @@ import (
 	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
 	sdk "github.com/reapchain/cosmos-sdk/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
+	"github.com/reapchain/ethermint/tests"
+	"github.com/reapchain/ethermint/x/evm/keeper"
+	"github.com/reapchain/ethermint/x/evm/types"
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
 	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
-	"github.com/tharsis/ethermint/tests"
-	"github.com/tharsis/ethermint/x/evm/keeper"
-	"github.com/tharsis/ethermint/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestGetHashFn() {

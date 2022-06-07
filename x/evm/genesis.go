@@ -10,9 +10,9 @@ import (
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 
-	ethermint "github.com/tharsis/ethermint/types"
-	"github.com/tharsis/ethermint/x/evm/keeper"
-	"github.com/tharsis/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/keeper"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // InitGenesis initializes genesis state based on exported genesis

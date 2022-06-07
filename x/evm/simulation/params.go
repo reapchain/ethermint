@@ -9,7 +9,7 @@ import (
 	amino "github.com/reapchain/cosmos-sdk/codec"
 	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
 	"github.com/reapchain/cosmos-sdk/x/simulation"
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

@@ -11,7 +11,7 @@ import (
 	ibcante "github.com/reapchain/ibc-go/v3/modules/core/ante"
 	ibckeeper "github.com/reapchain/ibc-go/v3/modules/core/keeper"
 
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 // HandlerOptions extend the SDK's AnteHandler options by requiring the IBC

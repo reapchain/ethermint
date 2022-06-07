@@ -14,7 +14,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/x/auth/signing"
 	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
 
-	"github.com/tharsis/ethermint/types"
+	"github.com/reapchain/ethermint/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"

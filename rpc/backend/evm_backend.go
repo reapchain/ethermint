@@ -27,10 +27,10 @@ import (
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
 
-	"github.com/tharsis/ethermint/rpc/types"
-	ethermint "github.com/tharsis/ethermint/types"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
-	feemarkettypes "github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/rpc/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 var bAttributeKeyEthereumBloom = []byte(evmtypes.AttributeKeyEthereumBloom)
@@ -927,8 +927,8 @@ func (b *Backend) BaseFee(height int64) (*big.Int, error) {
 // FeeHistory returns data relevant for fee estimation based on the specified range of blocks.
 func (b *Backend) FeeHistory(
 	userBlockCount rpc.DecimalOrHex, // number blocks to fetch, maximum is 100
-	lastBlock rpc.BlockNumber,       // the block to start search , to oldest
-	rewardPercentiles []float64,     // percentiles to fetch reward
+	lastBlock rpc.BlockNumber, // the block to start search , to oldest
+	rewardPercentiles []float64, // percentiles to fetch reward
 ) (*types.FeeHistoryResult, error) {
 	blockEnd := int64(lastBlock)
 

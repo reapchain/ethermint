@@ -12,7 +12,7 @@ import (
 	authante "github.com/reapchain/cosmos-sdk/x/auth/ante"
 	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
-	"github.com/tharsis/ethermint/crypto/ethsecp256k1"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 )
 
 const (

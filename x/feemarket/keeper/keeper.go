@@ -6,7 +6,7 @@ import (
 	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 	"github.com/reapchain/reapchain-core/libs/log"
 
-	"github.com/tharsis/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // Keeper grants access to the Fee Market module state.

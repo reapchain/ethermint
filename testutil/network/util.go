@@ -28,8 +28,8 @@ import (
 	mintypes "github.com/reapchain/cosmos-sdk/x/mint/types"
 	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
 
-	"github.com/tharsis/ethermint/server"
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/server"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 func startInProcess(cfg Config, val *Validator) error {

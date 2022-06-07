@@ -24,10 +24,10 @@ import (
 	"github.com/reapchain/cosmos-sdk/client"
 	cryptotypes "github.com/reapchain/cosmos-sdk/crypto/types"
 	"github.com/reapchain/cosmos-sdk/x/auth/signing"
-	"github.com/tharsis/ethermint/encoding"
-	"github.com/tharsis/ethermint/tests"
-	"github.com/tharsis/ethermint/x/evm/keeper"
-	"github.com/tharsis/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/encoding"
+	"github.com/reapchain/ethermint/tests"
+	"github.com/reapchain/ethermint/x/evm/keeper"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 const (

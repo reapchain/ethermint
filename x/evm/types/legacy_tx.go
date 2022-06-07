@@ -6,7 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
-	"github.com/tharsis/ethermint/types"
+	"github.com/reapchain/ethermint/types"
 )
 
 func newLegacyTx(tx *ethtypes.Transaction) (*LegacyTx, error) {

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/reapchain/cosmos-sdk/client"
-	"github.com/tharsis/ethermint/rpc/types"
+	"github.com/reapchain/ethermint/rpc/types"
 
 	"github.com/reapchain/reapchain-core/libs/log"
 
@@ -20,7 +20,7 @@ import (
 	"github.com/ethereum/go-ethereum/eth/filters"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	evmtypes "github.com/tharsis/ethermint/x/evm/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 // Backend defines the methods requided by the PublicFilterAPI backend
