@@ -23,8 +23,8 @@ import (
 // AddCommands adds server commands
 func AddCommands(rootCmd *cobra.Command, defaultNodeHome string, appCreator types.AppCreator, appExport types.AppExporter, addStartFlags types.ModuleInitFlags) {
 	tendermintCmd := &cobra.Command{
-		Use:   "tendermint",
-		Short: "Tendermint subcommands",
+		Use:   "reapchain",
+		Short: "Reapchain subcommands",
 	}
 
 	tendermintCmd.AddCommand(
