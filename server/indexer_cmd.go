@@ -5,12 +5,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/evmos/ethermint/indexer"
-	tmnode "github.com/tendermint/tendermint/node"
-	sm "github.com/tendermint/tendermint/state"
-	tmstore "github.com/tendermint/tendermint/store"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/server"
+	"github.com/reapchain/ethermint/indexer"
+	tmnode "github.com/reapchain/reapchain-core/node"
+	sm "github.com/reapchain/reapchain-core/state"
+	tmstore "github.com/reapchain/reapchain-core/store"
 )
 
 func NewIndexTxCmd() *cobra.Command {

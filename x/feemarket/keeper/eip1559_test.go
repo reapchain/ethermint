@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	abci "github.com/tendermint/tendermint/abci/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
 )
 
 func (suite *KeeperTestSuite) TestCalculateBaseFee() {

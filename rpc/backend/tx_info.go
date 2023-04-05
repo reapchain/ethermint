@@ -3,17 +3,17 @@ package backend
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
 	"github.com/pkg/errors"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	rpctypes "github.com/reapchain/ethermint/rpc/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 )
 
 // GetTransactionByHash returns the Ethereum format transaction identified by Ethereum transaction hash
@@ -276,7 +276,7 @@ func (b *Backend) GetTransactionByBlockNumberAndIndex(blockNum rpctypes.BlockNum
 
 // GetTxByEthHash uses `/tx_query` to find transaction by ethereum tx hash
 // TODO: Don't need to convert once hashing is fixed on Tendermint
-// https://github.com/tendermint/tendermint/issues/6539
+// https://github.com/reapchain/reapchain-core/issues/6539
 func (b *Backend) GetTxByEthHash(hash common.Hash) (*ethermint.TxResult, error) {
 	if b.indexer != nil {
 		return b.indexer.GetByTxHash(hash)

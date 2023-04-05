@@ -6,17 +6,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/reapchain/cosmos-sdk/testutil"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 
-	"github.com/evmos/ethermint/encoding"
+	"github.com/reapchain/ethermint/encoding"
 
-	"github.com/evmos/ethermint/app"
-	v010types "github.com/evmos/ethermint/x/feemarket/migrations/v010/types"
-	v011 "github.com/evmos/ethermint/x/feemarket/migrations/v011"
-	"github.com/evmos/ethermint/x/feemarket/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/reapchain/ethermint/app"
+	v010types "github.com/reapchain/ethermint/x/feemarket/migrations/v010/types"
+	v011 "github.com/reapchain/ethermint/x/feemarket/migrations/v011"
+	"github.com/reapchain/ethermint/x/feemarket/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 func init() {

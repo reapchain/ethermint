@@ -3,12 +3,12 @@ package ante_test
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/app/ante"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	banktypes "github.com/reapchain/cosmos-sdk/x/bank/types"
+	"github.com/reapchain/ethermint/app/ante"
+	"github.com/reapchain/ethermint/tests"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 var execTypes = []struct {

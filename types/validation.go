@@ -3,8 +3,8 @@ package types
 import (
 	"bytes"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/ethereum/go-ethereum/common"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 )
 
 // IsEmptyHash returns true if the hash corresponds to an empty ethereum hex hash.

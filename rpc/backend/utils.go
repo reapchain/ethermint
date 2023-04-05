@@ -8,19 +8,19 @@ import (
 	"sort"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	"github.com/reapchain/reapchain-core/libs/log"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 
-	"github.com/evmos/ethermint/rpc/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/rpc/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 type txGasAndReward struct {
@@ -244,7 +244,7 @@ func ParseTxLogsFromEvent(event abci.Event) ([]*ethtypes.Log, error) {
 }
 
 // ShouldIgnoreGasUsed returns true if the gasUsed in result should be ignored
-// workaround for issue: https://github.com/cosmos/cosmos-sdk/issues/10832
+// workaround for issue: https://github.com/reapchain/cosmos-sdk/issues/10832
 func ShouldIgnoreGasUsed(res *abci.ResponseDeliverTx) bool {
 	return res.GetCode() == 11 && strings.Contains(res.GetLog(), "no block gas left to run tx: out of gas")
 }

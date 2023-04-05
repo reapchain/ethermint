@@ -7,20 +7,19 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/evmos/ethermint/rpc/types"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	authtx "github.com/reapchain/cosmos-sdk/x/auth/tx"
+	"github.com/reapchain/ethermint/rpc/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	// . "github.com/onsi/ginkgo/v2"
 	// . "github.com/onsi/gomega"
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
@@ -28,9 +27,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient/gethclient"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/evmos/ethermint/server/config"
-	"github.com/evmos/ethermint/testutil/network"
-	ethermint "github.com/evmos/ethermint/types"
+	"github.com/reapchain/ethermint/server/config"
+	"github.com/reapchain/ethermint/testutil/network"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 // var _ = Describe("E2e", func() {

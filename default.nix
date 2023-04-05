@@ -7,11 +7,11 @@ let
   pname = "ethermintd";
   tags = [ "ledger" "netgo" ];
   ldflags = lib.concatStringsSep "\n" ([
-    "-X github.com/cosmos/cosmos-sdk/version.Name=ethermint"
-    "-X github.com/cosmos/cosmos-sdk/version.AppName=${pname}"
-    "-X github.com/cosmos/cosmos-sdk/version.Version=${version}"
-    "-X github.com/cosmos/cosmos-sdk/version.BuildTags=${lib.concatStringsSep "," tags}"
-    "-X github.com/cosmos/cosmos-sdk/version.Commit=${rev}"
+    "-X github.com/reapchain/cosmos-sdk/version.Name=ethermint"
+    "-X github.com/reapchain/cosmos-sdk/version.AppName=${pname}"
+    "-X github.com/reapchain/cosmos-sdk/version.Version=${version}"
+    "-X github.com/reapchain/cosmos-sdk/version.BuildTags=${lib.concatStringsSep "," tags}"
+    "-X github.com/reapchain/cosmos-sdk/version.Commit=${rev}"
   ]);
 in
 buildGoApplication rec {
@@ -28,7 +28,7 @@ buildGoApplication rec {
 
   meta = with lib; {
     description = "Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the Cosmos SDK which runs on top of Tendermint Core consensus engine.";
-    homepage = "https://github.com/evmos/ethermint";
+    homepage = "https://github.com/reapchain/ethermint";
     license = licenses.asl20;
     mainProgram = "ethermintd";
   };

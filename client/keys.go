@@ -3,16 +3,16 @@ package client
 import (
 	"bufio"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/keys"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/client"
+	"github.com/reapchain/cosmos-sdk/client/flags"
+	"github.com/reapchain/cosmos-sdk/client/keys"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/reapchain-core/libs/cli"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	clientkeys "github.com/evmos/ethermint/client/keys"
-	"github.com/evmos/ethermint/crypto/hd"
+	"github.com/reapchain/cosmos-sdk/crypto/keyring"
+	clientkeys "github.com/reapchain/ethermint/client/keys"
+	"github.com/reapchain/ethermint/crypto/hd"
 )
 
 // KeyCommands registers a sub-tree of commands to interact with

@@ -1,13 +1,13 @@
 package codec
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	"github.com/reapchain/cosmos-sdk/std"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	cryptocodec "github.com/evmos/ethermint/crypto/codec"
-	ethermint "github.com/evmos/ethermint/types"
+	cryptocodec "github.com/reapchain/ethermint/crypto/codec"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 // RegisterLegacyAminoCodec registers Interfaces from types, crypto, and SDK std.

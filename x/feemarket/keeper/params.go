@@ -3,13 +3,13 @@ package keeper
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	"github.com/reapchain/ethermint/x/feemarket/types"
 )
 
 // GetParams returns the total set of fee market parameters.
 func (k Keeper) GetParams(ctx sdk.Context) (params types.Params) {
-	// TODO: update once https://github.com/cosmos/cosmos-sdk/pull/12615 is merged
+	// TODO: update once https://github.com/reapchain/cosmos-sdk/pull/12615 is merged
 	// and released
 	for _, pair := range params.ParamSetPairs() {
 		k.paramSpace.GetIfExists(ctx, pair.Key, pair.Value)

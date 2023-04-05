@@ -6,13 +6,13 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authante "github.com/cosmos/cosmos-sdk/x/auth/ante"
 	"github.com/ethereum/go-ethereum/common"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authante "github.com/reapchain/cosmos-sdk/x/auth/ante"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 func SetupContract(b *testing.B) (*KeeperTestSuite, common.Address) {

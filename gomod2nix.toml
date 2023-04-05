@@ -65,7 +65,7 @@ schema = 3
   [mod."github.com/cosmos/btcutil"]
     version = "v1.0.4"
     hash = "sha256-JvcBXBdjdmnaW/nyf/tw/uaOAGn1b78yxrtl2/Rs3kA="
-  [mod."github.com/cosmos/cosmos-sdk"]
+  [mod."github.com/reapchain/cosmos-sdk"]
     version = "v0.45.5-0.20220523154235-2921a1c3c918"
     hash = "sha256-0HYbtx3fccZX78Hmdw7C8QK1OfLIWthDWYiT8Tm6mPo="
   [mod."github.com/cosmos/go-bip39"]
@@ -74,10 +74,10 @@ schema = 3
   [mod."github.com/cosmos/gorocksdb"]
     version = "v1.2.0"
     hash = "sha256-209TcVuXc5s/TcOvNlaQ1HEJAUDTEK3nxPhs+d8TEcY="
-  [mod."github.com/cosmos/iavl"]
+  [mod."github.com/reapchain/iavl"]
     version = "v0.17.3"
     hash = "sha256-gRWMH/ijkw569JSYsAVnZljH3Q6ywTTc6P8DdyJKKAk="
-  [mod."github.com/cosmos/ibc-go/v3"]
+  [mod."github.com/reapchain/ibc-go/v3"]
     version = "v3.1.0"
     hash = "sha256-WC85lenP1oiZmcb9CD+02hodGA4JYy4dhNDTUmFjn1I="
   [mod."github.com/cosmos/ledger-cosmos-go"]
@@ -384,7 +384,7 @@ schema = 3
   [mod."github.com/tendermint/go-amino"]
     version = "v0.16.0"
     hash = "sha256-JW4zO/0vMzf1dXLePOqaMtiLUZgNbuIseh9GV+jQlf0="
-  [mod."github.com/tendermint/tendermint"]
+  [mod."github.com/reapchain/reapchain-core"]
     version = "v0.34.20-0.20220517115723-e6f071164839"
     hash = "sha256-9hcZo4gjO92klL5vTIyraYZaKIdNRcoxW/PCdA2m/4s="
   [mod."github.com/tendermint/tm-db"]

@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v2 "github.com/evmos/ethermint/x/evm/migrations/v2"
-	v3 "github.com/evmos/ethermint/x/evm/migrations/v3"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	v2 "github.com/reapchain/ethermint/x/evm/migrations/v2"
+	v3 "github.com/reapchain/ethermint/x/evm/migrations/v3"
 )
 
 // Migrator is a struct for handling in-place store migrations.

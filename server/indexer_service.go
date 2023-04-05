@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/service"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/types"
+	"github.com/reapchain/reapchain-core/libs/service"
+	rpcclient "github.com/reapchain/reapchain-core/rpc/client"
+	"github.com/reapchain/reapchain-core/types"
 
-	ethermint "github.com/evmos/ethermint/types"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 const (

@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	"github.com/ethereum/go-ethereum/params"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 )
 
 var _ paramtypes.ParamSet = &Params{}

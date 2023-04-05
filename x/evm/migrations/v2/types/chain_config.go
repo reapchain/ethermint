@@ -4,13 +4,13 @@ import (
 	"math/big"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // EthereumConfig returns an Ethereum ChainConfig for EVM state transitions.

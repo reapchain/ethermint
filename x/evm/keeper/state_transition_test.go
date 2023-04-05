@@ -5,18 +5,18 @@ import (
 	"math"
 	"math/big"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/x/evm/keeper"
-	"github.com/evmos/ethermint/x/evm/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	stakingtypes "github.com/reapchain/cosmos-sdk/x/staking/types"
+	"github.com/reapchain/ethermint/tests"
+	"github.com/reapchain/ethermint/x/evm/keeper"
+	"github.com/reapchain/ethermint/x/evm/types"
+	"github.com/reapchain/reapchain-core/crypto/tmhash"
+	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 )
 
 func (suite *KeeperTestSuite) TestGetHashFn() {

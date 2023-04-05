@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 )

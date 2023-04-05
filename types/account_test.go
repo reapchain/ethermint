@@ -7,15 +7,15 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/reapchain/cosmos-sdk/codec"
+	codectypes "github.com/reapchain/cosmos-sdk/codec/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	authtypes "github.com/reapchain/cosmos-sdk/x/auth/types"
 
-	cryptocodec "github.com/evmos/ethermint/crypto/codec"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	ethermintcodec "github.com/evmos/ethermint/encoding/codec"
-	"github.com/evmos/ethermint/types"
+	cryptocodec "github.com/reapchain/ethermint/crypto/codec"
+	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
+	ethermintcodec "github.com/reapchain/ethermint/encoding/codec"
+	"github.com/reapchain/ethermint/types"
 )
 
 func init() {

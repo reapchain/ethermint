@@ -15,9 +15,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	grpctypes "github.com/reapchain/cosmos-sdk/types/grpc"
 
-	ethermint "github.com/evmos/ethermint/types"
+	ethermint "github.com/reapchain/ethermint/types"
 )
 
 // BlockNumber represents decoding hex string to block values

@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/reapchain/cosmos-sdk/types/kv"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // TestDecodeStore tests that evm simulation decoder decodes the key value pairs as expected.

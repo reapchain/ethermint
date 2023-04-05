@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"math/rand"
 
-	amino "github.com/cosmos/cosmos-sdk/codec"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/evmos/ethermint/x/evm/types"
+	amino "github.com/reapchain/cosmos-sdk/codec"
+	simtypes "github.com/reapchain/cosmos-sdk/types/simulation"
+	"github.com/reapchain/cosmos-sdk/x/simulation"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

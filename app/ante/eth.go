@@ -5,14 +5,14 @@ import (
 	"math/big"
 	"strconv"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authante "github.com/cosmos/cosmos-sdk/x/auth/ante"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
+	authante "github.com/reapchain/cosmos-sdk/x/auth/ante"
 
-	ethermint "github.com/evmos/ethermint/types"
-	evmkeeper "github.com/evmos/ethermint/x/evm/keeper"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmkeeper "github.com/reapchain/ethermint/x/evm/keeper"
+	"github.com/reapchain/ethermint/x/evm/statedb"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
@@ -222,7 +222,7 @@ func (egcd EthGasConsumeDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simula
 	// TODO: change to typed events
 	ctx.EventManager().EmitEvents(events)
 
-	// TODO: deprecate after https://github.com/cosmos/cosmos-sdk/issues/9514  is fixed on SDK
+	// TODO: deprecate after https://github.com/reapchain/cosmos-sdk/issues/9514  is fixed on SDK
 	blockGasLimit := ethermint.BlockGasLimit(ctx)
 
 	// NOTE: safety check

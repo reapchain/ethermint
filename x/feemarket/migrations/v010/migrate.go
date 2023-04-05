@@ -3,11 +3,11 @@ package v010
 import (
 	"math/big"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/evmos/ethermint/x/feemarket/migrations/v010/types"
-	v09types "github.com/evmos/ethermint/x/feemarket/migrations/v09/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
+	"github.com/reapchain/ethermint/x/feemarket/migrations/v010/types"
+	v09types "github.com/reapchain/ethermint/x/feemarket/migrations/v09/types"
 )
 
 // KeyPrefixBaseFeeV1 is the base fee key prefix used in version 1

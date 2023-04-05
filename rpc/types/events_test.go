@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/ethereum/go-ethereum/common"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
 )
 
 func TestParseTxResult(t *testing.T) {

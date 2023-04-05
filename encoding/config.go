@@ -1,13 +1,13 @@
 package encoding
 
 import (
-	amino "github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
+	amino "github.com/reapchain/cosmos-sdk/codec"
+	"github.com/reapchain/cosmos-sdk/codec/types"
+	"github.com/reapchain/cosmos-sdk/simapp/params"
+	"github.com/reapchain/cosmos-sdk/types/module"
+	"github.com/reapchain/cosmos-sdk/x/auth/tx"
 
-	enccodec "github.com/evmos/ethermint/encoding/codec"
+	enccodec "github.com/reapchain/ethermint/encoding/codec"
 )
 
 // MakeConfig creates an EncodingConfig for testing

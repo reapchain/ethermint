@@ -6,16 +6,16 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/reapchain/cosmos-sdk/testutil"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
 
-	"github.com/evmos/ethermint/encoding"
+	"github.com/reapchain/ethermint/encoding"
 
-	"github.com/evmos/ethermint/app"
-	v2 "github.com/evmos/ethermint/x/evm/migrations/v2"
-	v2types "github.com/evmos/ethermint/x/evm/migrations/v2/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/app"
+	v2 "github.com/reapchain/ethermint/x/evm/migrations/v2"
+	v2types "github.com/reapchain/ethermint/x/evm/migrations/v2/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 func TestMigrateStore(t *testing.T) {

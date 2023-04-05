@@ -8,10 +8,10 @@ import (
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/tests"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/reapchain/ethermint/app"
+	"github.com/reapchain/ethermint/encoding"
+	"github.com/reapchain/ethermint/tests"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 )
 
 func TestTxEncoding(t *testing.T) {
@@ -31,7 +31,7 @@ func TestTxEncoding(t *testing.T) {
 	require.Error(t, err, "encoding failed")
 
 	// FIXME: transaction hashing is hardcoded on Terndermint:
-	// See https://github.com/tendermint/tendermint/issues/6539 for reference
+	// See https://github.com/reapchain/reapchain-core/issues/6539 for reference
 	// txHash := msg.AsTransaction().Hash()
 	// tmTx := tmtypes.Tx(bz)
 

@@ -8,11 +8,11 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/tendermint/tendermint/libs/strings"
+	"github.com/reapchain/reapchain-core/libs/strings"
 
-	"github.com/cosmos/cosmos-sdk/server/config"
+	"github.com/reapchain/cosmos-sdk/server/config"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/reapchain/cosmos-sdk/types/errors"
 )
 
 const (

@@ -5,16 +5,16 @@ import (
 	"math/big"
 	"strconv"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/ethereum/go-ethereum/rpc"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
-	tmrpctypes "github.com/tendermint/tendermint/rpc/core/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	rpctypes "github.com/reapchain/ethermint/rpc/types"
+	ethermint "github.com/reapchain/ethermint/types"
+	evmtypes "github.com/reapchain/ethermint/x/evm/types"
+	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
+	tmrpctypes "github.com/reapchain/reapchain-core/rpc/core/types"
 )
 
 // ChainID is the EIP-155 replay-protection chain id for the current ethereum chain config.
@@ -141,8 +141,8 @@ func (b *Backend) GetCoinbase() (sdk.AccAddress, error) {
 // FeeHistory returns data relevant for fee estimation based on the specified range of blocks.
 func (b *Backend) FeeHistory(
 	userBlockCount rpc.DecimalOrHex, // number blocks to fetch, maximum is 100
-	lastBlock rpc.BlockNumber, // the block to start search , to oldest
-	rewardPercentiles []float64, // percentiles to fetch reward
+	lastBlock rpc.BlockNumber,       // the block to start search , to oldest
+	rewardPercentiles []float64,     // percentiles to fetch reward
 ) (*rpctypes.FeeHistoryResult, error) {
 	blockEnd := int64(lastBlock)
 

@@ -1,9 +1,9 @@
 package v3
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	sdk "github.com/reapchain/cosmos-sdk/types"
+	paramtypes "github.com/reapchain/cosmos-sdk/x/params/types"
+	"github.com/reapchain/ethermint/x/evm/types"
 )
 
 // MigrateStore sets the default for GrayGlacierBlock and MergeNetsplitBlock in ChainConfig parameter.

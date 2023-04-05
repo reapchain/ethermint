@@ -2,8 +2,8 @@ package types
 
 import (
 	"github.com/ethereum/go-ethereum/common"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	abci "github.com/reapchain/reapchain-core/abci/types"
+	tmtypes "github.com/reapchain/reapchain-core/types"
 )
 
 // EVMTxIndexer defines the interface of custom eth tx indexer.
