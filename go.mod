@@ -21,9 +21,9 @@ require (
 	github.com/onsi/gomega v1.19.0
 	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.7
-	github.com/reapchain/cosmos-sdk v0.45.4
-	github.com/reapchain/ibc-go/v3 v3.0.0
-	github.com/reapchain/reapchain-core v0.34.14-reap.core.v0.1.13
+	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.7-rc
+	github.com/reapchain/ibc-go/v3 v3.2.0-reap.ibc.v0.5.8-rc
+	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.14-rc
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/rs/cors v1.8.2
 	github.com/spf13/cast v1.5.0
@@ -128,7 +128,7 @@ require (
 	github.com/prometheus/procfs v0.7.3 // indirect
 	github.com/prometheus/tsdb v0.7.1 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
-	github.com/reapchain/iavl v0.19.0 // indirect
+	github.com/reapchain/iavl v0.19.0-reap.iavl.v0.2.5-rc // indirect
 	github.com/rjeczalik/notify v0.9.1 // indirect
 	github.com/rs/zerolog v1.27.0 // indirect
 	github.com/sasha-s/go-deadlock v0.3.1 // indirect
@@ -159,12 +159,6 @@ require (
 replace (
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.1.7-0.20210622111912-ef00f8ac3d76
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
-	github.com/reapchain/cosmos-sdk => /Users/martinbhatta/Reapchain/april-updates/cosmos-sdk
-
-	github.com/reapchain/iavl => /Users/martinbhatta/Reapchain/april-updates/iavl
-
-	github.com/reapchain/ibc-go/v3 => /Users/martinbhatta/Reapchain/april-updates/ibc-go
-	github.com/reapchain/reapchain-core => /Users/martinbhatta/Reapchain/april-updates/reapchain-core
 
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
 )
