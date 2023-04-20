@@ -35,8 +35,8 @@ import (
 
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
-	tmversion "github.com/reapchain/reapchain-core/proto/reapchain-core/version"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
+	tmversion "github.com/reapchain/reapchain-core/proto/podc/version"
 	"github.com/reapchain/reapchain-core/version"
 )
 

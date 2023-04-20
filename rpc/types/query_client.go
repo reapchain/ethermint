@@ -6,7 +6,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/types/tx"
 
 	abci "github.com/reapchain/reapchain-core/abci/types"
-	"github.com/reapchain/reapchain-core/proto/reapchain-core/crypto"
+	"github.com/reapchain/reapchain-core/proto/podc/crypto"
 
 	"github.com/reapchain/cosmos-sdk/client"
 

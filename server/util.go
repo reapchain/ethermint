@@ -15,7 +15,7 @@ import (
 	"github.com/reapchain/cosmos-sdk/server/types"
 	"github.com/reapchain/cosmos-sdk/version"
 
-	tmcmd "github.com/reapchain/reapchain-core/cmd/reapchain/commands"
+	tmcmd "github.com/reapchain/reapchain-core/cmd/podc/commands"
 	tmlog "github.com/reapchain/reapchain-core/libs/log"
 	rpcclient "github.com/reapchain/reapchain-core/rpc/jsonrpc/client"
 )

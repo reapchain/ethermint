@@ -39,7 +39,7 @@ import (
 	evmtypes "github.com/reapchain/ethermint/x/evm/types"
 	feemarkettypes "github.com/reapchain/ethermint/x/feemarket/types"
 
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 )
 
 type AnteTestSuite struct {
