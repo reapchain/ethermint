@@ -31,7 +31,7 @@ import (
 	ibchost "github.com/reapchain/ibc-go/v3/modules/core/24-host"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	dbm "github.com/tendermint/tm-db"
 )
 

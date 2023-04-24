@@ -15,7 +15,7 @@ import (
 	"github.com/reapchain/ethermint/x/evm/keeper"
 	"github.com/reapchain/ethermint/x/evm/types"
 	"github.com/reapchain/reapchain-core/crypto/tmhash"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 )
 

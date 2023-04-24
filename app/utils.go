@@ -24,7 +24,7 @@ import (
 	"github.com/reapchain/ethermint/crypto/ethsecp256k1"
 	abci "github.com/reapchain/reapchain-core/abci/types"
 	"github.com/reapchain/reapchain-core/libs/log"
-	tmproto "github.com/reapchain/reapchain-core/proto/reapchain-core/types"
+	tmproto "github.com/reapchain/reapchain-core/proto/podc/types"
 	tmtypes "github.com/reapchain/reapchain-core/types"
 	dbm "github.com/tendermint/tm-db"
 )
