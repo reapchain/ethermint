@@ -7,40 +7,26 @@ parent:
   <h1> Ethermint </h1>
 </div>
 
-![banner](docs/ethermint.jpg)
-
 <div align="center">
   <a href="https://github.com/reapchain/ethermint/releases/latest">
-    <img alt="Version" src="https://img.shields.io/github/tag/tharsis/ethermint.svg" />
+    <img alt="Version" src="https://img.shields.io/github/tag/reapchain/ethermint.svg" />
   </a>
   <a href="https://github.com/reapchain/ethermint/blob/main/LICENSE">
-    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/tharsis/ethermint.svg" />
-  </a>
-  <a href="https://pkg.go.dev/github.com/reapchain/ethermint">
-    <img alt="GoDoc" src="https://godoc.org/github.com/reapchain/ethermint?status.svg" />
-  </a>
-  <a href="https://goreportcard.com/report/github.com/reapchain/ethermint">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/reapchain/ethermint"/>
-  </a>
-  <a href="https://bestpractices.coreinfrastructure.org/projects/5018">
-    <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/tharsis/ethermint">
+    <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/reapchain/ethermint.svg" />
   </a>
 </div>
 <div align="center">
-  <a href="https://discord.gg/trje9XuAmy">
-    <img alt="Discord" src="https://img.shields.io/discord/809048090249134080.svg" />
-  </a>
-  <a href="https://github.com/reapchain/ethermint/actions?query=branch%3Amain+workflow%3ALint">
-    <img alt="Lint Status" src="https://github.com/reapchain/ethermint/actions/workflows/lint.yml/badge.svg?branch=main" />
-  </a>
-  <a href="https://codecov.io/gh/tharsis/ethermint">
-    <img alt="Code Coverage" src="https://codecov.io/gh/tharsis/ethermint/branch/main/graph/badge.svg" />
-  </a>
 </div>
 
-Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the [Cosmos SDK](https://github.com/reapchain/cosmos-sdk/) which runs on top of [Tendermint Core](https://github.com/reapchain/reapchain-core) consensus engine.
+
+<br></br>
+Reapchain Ethermint is a scalable and interoperable Ethereum library, built on Proof-of-Stake with fast-finality using the [Reapchain Cosmos SDK](https://github.com/reapchain/cosmos-sdk/) which runs on top of [Reapchain Core](https://github.com/reapchain/reapchain-core) consensus engine.
 
 **Note**: Requires [Go 1.18+](https://golang.org/dl/)
+
+## Introduction
+
+The Reapchain Ethermint is a fork of the Evmos Ethermint [v0.19.0](https://github.com/evmos/ethermint/tree/v0.19.0). We, the Reapchain Team, have integrated our Consensus Engine which we call the Reapchain Core on top of the Open Source code available in the Evmos Ecosystem. By utilizing the Reapchain Ethermint as well as the Reapchain Core Consensus Engine, you will be able to create your own Proof-of-Stake blockchains.
 
 ## Installation
 
@@ -52,27 +38,5 @@ make install
 
 Or check out the latest [release](https://github.com/reapchain/ethermint/releases).
 
-## Quick Start
 
-To learn how the Ethermint works from a high-level perspective, go to the [Introduction](https://evmos.dev/intro/overview.html) section from the documentation. You can also check the instructions to [Run a Node](https://evmos.dev/quickstart/run_node.html).
-
-For an example on how Ethermint can be used on any Cosmos-SDK chain, please refer to [Evmos](https://www.github.com/tharsis/evmos).
-
-## Community
-
-The following chat channels and forums are a great spot to ask questions about Ethermint:
-
-- [Evmos Twitter](https://twitter.com/EvmosOrg)
-- [Evmos Discord](https://discord.gg/trje9XuAmy)
-- [Evmos Telegram](https://t.me/EvmosOrg)
-- [Tharsis Twitter](https://twitter.com/TharsisHQ)
-
-## Contributing
-
-Looking for a good place to start contributing? Check out some [`good first issues`](https://github.com/reapchain/ethermint/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22).
-
-For additional instructions, standards and style guides, please refer to the [Contributing](./CONTRIBUTING.md) document.
-
-## Careers
-
-See our open positions on [Cosmos Jobs](https://jobs.cosmos.network/project/evmos-d0sk1uxuh-remote/), [Notion](https://tharsis.notion.site), or feel free to [reach out](mailto:careers@thars.is) via email.
+ 
