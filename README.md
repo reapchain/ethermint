@@ -30,8 +30,6 @@ The Reapchain Ethermint is a fork of the Evmos Ethermint [v0.19.0](https://githu
 
 ## Installation
 
-For prerequisites and detailed build instructions please read the Evmos [Installation](https://evmos.dev/quickstart/installation.html) instructions. Once the dependencies are installed, run:
-
 ```bash
 make install
 ```
