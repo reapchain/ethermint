@@ -1,6 +1,6 @@
 module github.com/reapchain/ethermint
 
-go 1.18
+go 1.21.0
 
 require (
 	cosmossdk.io/math v1.0.0-beta.3
@@ -26,7 +26,7 @@ require (
 	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.24
 	github.com/regen-network/cosmos-proto v0.3.1
 	github.com/rs/cors v1.8.2
-	github.com/spf13/cast v1.5.0
+	github.com/spf13/cast v1.10.0
 	github.com/spf13/cobra v1.5.0
 	github.com/spf13/viper v1.12.0
 	github.com/status-im/keycard-go v0.0.0-20200402102358-957c09536969
@@ -166,5 +166,4 @@ replace (
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
-
 )
