@@ -20,7 +20,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.1.4
 	github.com/onsi/gomega v1.19.0
 	github.com/pkg/errors v0.9.1
-	github.com/rakyll/statik v0.1.7
+	github.com/rakyll/statik v0.1.8
 	github.com/reapchain/cosmos-sdk v0.45.7-reap.sdk.v0.4.21
 	github.com/reapchain/ibc-go/v3 v3.2.0-reap.ibc.v0.5.22
 	github.com/reapchain/reapchain-core v0.34.20-reap.core.v0.1.24
@@ -166,5 +166,4 @@ replace (
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
-
 )
